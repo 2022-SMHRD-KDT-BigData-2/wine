@@ -1,5 +1,5 @@
 package wine.model;
 
-public class DTO {
+public class SEO {
 
 }
