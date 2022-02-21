@@ -11,7 +11,7 @@ import javax.websocket.SendResult;
 import Model.MemberDAO;
 import Model.MemberVO;
 
-@WebServlet("/JoinService")
+@WebServlet("/MypageService")
 public class MypageService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
