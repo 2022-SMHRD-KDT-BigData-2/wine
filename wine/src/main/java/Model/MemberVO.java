@@ -5,13 +5,15 @@ public class MemberVO {
 	private String id;
 	private String pw;
 	private String birth;
+	private String email;
 	private String gender;
 	
-	public MemberVO(String id, String pw, String birth, String gender) {
+	public MemberVO(String id, String pw, String birth,String email, String gender) {
 		super();
 		this.id = id;
 		this.pw = pw;
 		this.birth = birth;
+		this.email = email;
 		this.gender = gender;
 	}
 	
@@ -21,10 +23,11 @@ public class MemberVO {
 		this.pw = pw;
 	}
 	
-	public MemberVO(String pw, String birth, String gender) {
+	public MemberVO(String pw, String birth, String email, String gender) {
 		super();
 		this.pw = pw;
 		this.birth = birth;
+		this.email = email;
 		this.gender = gender;
 	}
 
@@ -50,6 +53,14 @@ public class MemberVO {
 
 	public void setBirth(String birth) {
 		this.birth = birth;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getGender() {

@@ -9,31 +9,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body>
-<section id="header">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<!-- login -->
-									<h2 style="text-align:right;"><a href="Login.jsp" id="login" style="color:white;">로그인</a>
-									&nbsp;&nbsp;&nbsp;<a href="Join.jsp" id="join" style="color:white;">회원가입</a></h2>
-					
-									
-								<!-- Logo -->
-									<h1><a href="index.html" id="logo">Wine</a></h1>
-
-								<!-- Nav -->
-									<nav id="nav">
-										<a href="index.html">메인으로</a>
-										<a href="threecolumn.html">와인추천</a>
-										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="twocolumn2.html">판매처</a>
-										<a href="onecolumn.html">홍보관</a>
-									</nav>
-
-							</div>
-						</div>
-					</div>
 
 
 

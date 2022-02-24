@@ -5,7 +5,7 @@
 <mapper namespace="Model.MemberDAO">
  	
 	<insert id = "JoinService" parameterType="Model.MemberVO">
-		insert into msg_member values(#{id}, #{pw}, #{birth}, #{gender})
+		insert into msg_member values(#{id}, #{pw}, #{birth},#{email}, #{gender})
 	</insert>
 
 	<select id = "loginService" parameterType="Model.MemberVO" resultType="Model.MemberVO">
@@ -13,8 +13,8 @@
 	</select>
 	
 	<update id = "MypageService" parameterType="Model.MemberVO" >
-		update msg_member set tel=#{tel}, address= #{address} where email = #{email}
+		update msg_member set pw=#{pw}, birth= #{birth}, email=#{email}, gender=#{gender} where id = #{id}
 	</update>
-	
+
 
 </mapper>
