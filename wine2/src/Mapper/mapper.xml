@@ -5,7 +5,7 @@
 <mapper namespace="Model.MemberDAO">
 
 	<select id="selectRecommend" resultType="Model.WineVO">
-		select * from msg_board
+		select * from info
 	</select>
 	
 	<insert id = "joinService" parameterType="Model.MemberVO">
