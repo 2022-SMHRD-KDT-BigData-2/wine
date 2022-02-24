@@ -16,6 +16,12 @@ public class MemberVO {
 
 
 
+	public MemberVO(String id2, String pw2, String birth, String gender, String email, String favorite) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
 	public String getId() {
 		return id;
 	}

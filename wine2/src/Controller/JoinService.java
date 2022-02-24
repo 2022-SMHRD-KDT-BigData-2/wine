@@ -22,8 +22,15 @@ public class JoinService extends HttpServlet {
 		//1.파라미터 수집
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
+		String birth = request.getParameter("birth");
+		String gender = request.getParameter("gender");
+		String email = request.getParameter("email");
+		String favorite = request.getParameter("favorite");
+		
+		
+		
 
-		MemberVO vo = new MemberVO(id, pw);
+		MemberVO vo = new MemberVO(id, pw, birth, gender, email, favorite);
 		//2. DAO에 넘겨줘서 DB에 저장
 		
 		MemberDAO dao = new MemberDAO();

@@ -9,7 +9,7 @@
 	</select>
 	
 	<insert id = "joinService" parameterType="Model.MemberVO">
-		insert into member1 values(#{id}, #{pw})
+		insert into member values(#{id}, #{pw},#{birth},#{gender},#{email},#{favorite})
 	</insert>
 
 
