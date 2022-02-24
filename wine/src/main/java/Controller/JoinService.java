@@ -24,7 +24,7 @@ public class JoinService extends HttpServlet {
 		String email = request.getParameter("email");
 		String gender = request.getParameter("gender");
 		
-		MemberVO vo = new MemberVO(id, pw, birth, gender);
+		MemberVO vo = new MemberVO(id, pw, birth, email, gender);
 		
 		MemberDAO dao = new MemberDAO();
 		
