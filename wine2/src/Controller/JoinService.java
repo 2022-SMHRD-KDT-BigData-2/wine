@@ -22,15 +22,8 @@ public class JoinService extends HttpServlet {
 		//1.파라미터 수집
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
-		String birth = request.getParameter("birth");
-		String gender = request.getParameter("gender");
-		String email = request.getParameter("email");
-		String favorite = request.getParameter("favorite");
-		
-		
-		
 
-		MemberVO vo = new MemberVO(id, pw, birth, gender, email, favorite);
+		MemberVO vo = new MemberVO(id, pw);
 		//2. DAO에 넘겨줘서 DB에 저장
 		
 		MemberDAO dao = new MemberDAO();
@@ -41,16 +34,16 @@ public class JoinService extends HttpServlet {
 		
 		
 		
-		//3. 성공여부를 판단해;
+		//3. 성공여부를 판단해서
 		// 성공 : join_success.jsp로 이동
 		// 실패 : main.jsp
 		
 		if(cnt >0) {
 			//성공
-			response.sendRedirect("index.html");
+			response.sendRedirect("main.jsp");
 		}else {
 			//실패
-			response.sendRedirect("join.jsp");
+			response.sendRedirect("main.jsp");
 		}
 		
 		

@@ -1,5 +1,5 @@
-<%@page import="java.util.List"%>
 <%@page import="Model.WineVO"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE HTML>

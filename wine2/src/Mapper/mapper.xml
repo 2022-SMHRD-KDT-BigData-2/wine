@@ -5,20 +5,16 @@
 <mapper namespace="Model.MemberDAO">
 
 	<select id="selectRecommend" resultType="Model.WineVO">
-<<<<<<< HEAD
-		select * from member
-=======
 		select * from info
->>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BigData-2/wine.git
 	</select>
 	
 	<insert id = "joinService" parameterType="Model.MemberVO">
-		insert into member values(#{id}, #{pw},#{birth},#{gender},#{email},#{favorite})
+		insert into member1 values(#{id}, #{pw})
 	</insert>
 
 
 	<select id = "loginService" parameterType="Model.MemberVO" resultType="Model.MemberVO">
-		select * from member where id = #{id} and pw = #{pw}
+		select * from member1 where id = #{id} and pw = #{pw}
 	</select>
 	
 </mapper>
