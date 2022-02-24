@@ -14,7 +14,7 @@
 
 
 	<select id = "loginService" parameterType="Model.MemberVO" resultType="Model.MemberVO">
-		select * from member1 where id = #{id} and pw = #{pw}
+		select * from member where id = #{id} and pw = #{pw}
 	</select>
 	
 </mapper>
