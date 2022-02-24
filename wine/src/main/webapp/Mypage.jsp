@@ -13,6 +13,9 @@
 			<br>이메일<br><input name="email" type="text">
 			<br>남성<input type="radio" name="gender" value="men">
                               여성<input type="radio" name="gender" value="women">
+            <br>단만<input type="radio" name="favorite" value="dan">
+            	쓴맛<input type="radio" name="favorite" value="ssen">
+                           신맛<input type="radio" name="favorite" value="sin">
 			<br><input type="submit" value="수정" class="button fit">
 		</form>
 </body>

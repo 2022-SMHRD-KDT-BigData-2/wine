@@ -12,7 +12,7 @@
 
 
 
-		<form action="loginService" method="post">로그인
+		<form action="LoginService" method="post">로그인
 			<br><input name="id" type="text" placeholder="ID을 입력하세요">
 			<br><input name="pw" type="password" placeholder="PW를 입력하세요">
 			<br><input type="submit" value="LogIn" class="button fit">

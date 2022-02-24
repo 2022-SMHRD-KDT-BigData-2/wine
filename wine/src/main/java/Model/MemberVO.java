@@ -7,14 +7,16 @@ public class MemberVO {
 	private String birth;
 	private String email;
 	private String gender;
+	private String favorite;
 	
-	public MemberVO(String id, String pw, String birth,String email, String gender) {
+	public MemberVO(String id, String pw, String birth,String email, String gender,String favorite) {
 		super();
 		this.id = id;
 		this.pw = pw;
 		this.birth = birth;
 		this.email = email;
 		this.gender = gender;
+		this.favorite = favorite;
 	}
 	
 	public MemberVO(String id, String pw) {
@@ -23,12 +25,13 @@ public class MemberVO {
 		this.pw = pw;
 	}
 	
-	public MemberVO(String pw, String birth, String email, String gender) {
+	public MemberVO(String pw, String birth, String email, String gender,String favorite) {
 		super();
 		this.pw = pw;
 		this.birth = birth;
 		this.email = email;
 		this.gender = gender;
+		this.favorite = favorite;
 	}
 
 	public String getId() {
@@ -69,6 +72,14 @@ public class MemberVO {
 
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+
+	public String getFavorite() {
+		return favorite;
+	}
+
+	public void setFavorite(String favorite) {
+		this.favorite = favorite;
 	}
 	
 	

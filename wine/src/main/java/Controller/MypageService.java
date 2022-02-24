@@ -22,8 +22,9 @@ public class MypageService extends HttpServlet {
 		String birth = request.getParameter("birth");
 		String email = request.getParameter("email");
 		String gender = request.getParameter("gender");
+		String favorite = request.getParameter("favorite");
 		
-		MemberVO vo = new MemberVO( pw, birth, email, gender);
+		MemberVO vo = new MemberVO( pw, birth, email, gender,favorite);
 		
 		MemberDAO dao = new MemberDAO();
 		
