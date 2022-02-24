@@ -5,7 +5,11 @@
 <mapper namespace="Model.MemberDAO">
 
 	<select id="selectRecommend" resultType="Model.WineVO">
+<<<<<<< HEAD
 		select * from member
+=======
+		select * from info
+>>>>>>> branch 'master' of https://github.com/2022-SMHRD-KDT-BigData-2/wine.git
 	</select>
 	
 	<insert id = "joinService" parameterType="Model.MemberVO">
