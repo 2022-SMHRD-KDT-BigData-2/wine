@@ -1,3 +1,5 @@
+<%@page import="java.util.ArrayList"%>
+
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -74,8 +76,44 @@
       
 	
 	</style>
+	<script src="js/jquery-3.6.0.js"></script>
 </head>
 <body>
+		<script type="text/javascript">
+				function idCheck(){
+				 
+					//1. email 가져오기
+					let id = $('#check').val()
+					
+					//2. ajax
+					$.ajax({
+						url : 'checkService',
+						type : 'post', 
+						data : {
+							'id' : id, 
+						},
+						success : function(res){
+							console.log(res);
+							if(res == 'true'){
+								//사용가능한 이메일
+								//.css('속성명', '값') : 해당태그의 css를 바꿔주는 함수
+								//.attr('속성명', '값') : 태그의 속성값을 변경해주는 함수
+								$('#result').html('사용가능한 아이디 입니다.');
+								$('#result').css('color', 'green');
+							}else{
+								//중복된 이메일
+								$('#result').html('중복된 아이디 입니다.');
+								$('#result').css('color', 'red');								
+							}
+							
+							
+						},
+						error : function(){alert("error");}			
+					});
+					
+				}
+			</script>
+	
 
 			<form action="JoinService" method="post">
 				<table>
@@ -84,7 +122,9 @@
 				</tr>
 				<tr>
 					<td>ID</td>
-					<td colspan="2"><input name="id" type="text"  placeholder="id를 입력하세요"></td>
+					<td colspan="2"><input id="check" name="id" type="text"  placeholder="id를 입력하세요">
+					<p id="result"></p>
+					<button type="button" onClick="idCheck()">중복 확인</button>
 				</tr>
 				
 				<tr>
@@ -123,6 +163,8 @@
 	
 			</table>
 		</form>	
+		
 
-</body>
+	
+
 </html>

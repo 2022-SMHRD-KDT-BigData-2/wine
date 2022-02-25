@@ -66,4 +66,19 @@ public class MemberDAO {
 	}
 	//==login==
 		
+	
+	public MemberVO idCheck(String id) {
+		
+		SqlSession session = sqlSessionFactory.openSession();
+		
+		MemberVO vo = session.selectOne("idCheck", id);
+		
+		session.close();
+		
+		return vo;
+		
+		
+	}
+	
+	//==id check
 }
