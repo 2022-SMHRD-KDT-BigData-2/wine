@@ -9,31 +9,16 @@
 		<script src="js/jquery-3.6.0.js"></script>
 		<style>
 			body {
-			background-color : gray;
        			 height: 100vh;
-     		  	 background-image: url('images/wine_main1_1.jpg.png');
+     		  	 background-image: url('images/banner.jpg');
       			background-repeat : no-repeat;
-        		background-size : 50%;
+      			background-size : cover;
 				 opacity: 0.5;
      		 }
 			
-			#first, #second{ 
-
-			display : flex;
-			align-items : center;
-			justify-content : center;
-			flex-direction : column;
-			width : 22%;
-			height : 20%;
-			background-color: #ffffff;
-        	opacity: 0.5;
-			font-size : large;
-			border-style: solid; border-width: 10px 10px 10px 10px; 
-			padding: 12px; 
-			word-break: break-all; 	
-			border-radius : 80px 80px 80px 80px;
-			font-weight : bold;
-			
+			img{
+				width: 50%;
+				height : 100%;
 			}
 			
 			#zero{
@@ -44,36 +29,87 @@
 				font-weight : bold;
 			}
 			
-			#first{
-				position : absolute;
-				top : 50%;
-				left : 45%;
-			}
+		table{
+		border: 5px solid black;
+		width: 30%;
+			border-collapse: collapse;
+			font-size : 300%;
+			font-weight : bold;
+			
+			position : absolute;
+				top : 40%;
+				left : 50%;
 
-			#second{
-				position : absolute;
-				top : 50%;
-				left : 70%;
-			}
+		}
+	
+	th, tr,td { 
+		border: 1px solid black; 
+		padding: 10px;
+		text-align : center;
+		font-size : 100%;
+		font-weight : bold;
+	}
+		
+	th{
+			color: #fff;
+		 background: #ce4869;
+	}
 
+	a{
+	text-decoration-line : none;
+	}
+	
+	   input {
+        width: 70%;
+        padding: 10px 10px;
+        font-size: 20px;
+      }
+      
+      #submit, #join{
+       width: 20%;
+        padding: 10px 10px;
+        font-size: 20px;
+      }
+	
+	input::placeholder {
+  		color: red;
+  		font-style: italic;
 
+	}
+	
+	
 			 
 		</style>
 	</head>
 	<body>
+		
+			<img src="images/wine_main1_1.jpg.png">
+	
 
 		<div id=zero>
 			WINE학개론
 		</div>
-
-		<div id=first>
-			<h1><a href ="Login.jsp" style="text-decoration-line : none;">로그인</a></h1>
-		</div>
-
 	
-		<div id = second>
-			<h1><a href ="Join.jsp" style="text-decoration-line : none;">회원가입</a></h1>
-		</div>
+
+		<form action="LoginService" method="post">
+			<table>
+			<tr>
+				<th colspan="2">로그인을 해주세요</th>
+			</tr>
+			<tr>
+				<td>ID</td>
+				<td><input name="id" type="text"  placeholder="ID를 입력하세요"></td>
+			<tr>
+			<tr>
+				<td>PW</td>
+				<td><input name="pw" type="password"  placeholder="PW를 입력하세요"></td>
+			<tr>
+				<td colspan="2"><input id="submit" type="submit" value="로그인" class="button fit">
+				<button id ="join" ><a href="Join.jsp" > 회원가입</a></button></td>
+			</tr>
+			</table>
+		</form>	
+
 
 	</body>
 </html>

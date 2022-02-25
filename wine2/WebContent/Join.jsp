@@ -43,11 +43,41 @@
 		 background: #ce4869;
 	}
 	
+	table td:nth-child(1) {
+    width: 20%;
+  }
+	
+	
+		input::placeholder {
+  		color: red;
+  		font-style: italic;
+
+	}
+	
+	
+	
+	   input {
+        width: 70%;
+        padding: 10px 10px;
+        font-size: 20px;
+      }
+      
+      #submit{
+       width: 20%;
+        padding: 10px 10px;
+        font-size: 20px;
+      }
+      
+      #choicea, #choiceb, #choicec,#choiced, #choicee{
+      	width : 10%;
+      }
+      
+	
 	</style>
 </head>
 <body>
 
-			<form action="JoinService" method="post">È¸¿ø°¡ÀÔ
+			<form action="JoinService" method="post">
 				<table>
 				<tr>
 					<th colspan="3">È¸¿ø°¡ÀÔ</th>
@@ -70,8 +100,8 @@
 				
 				<tr>
 					<td>¼ºº°</td>
-					<td colspan="2">³²¼º<input name="gender" type="radio"  value ="³²¼º" >
-			       					 ¿©¼º<input name="gender" type="radio"  value ="¿©¼º"> </td>
+					<td colspan="2">³²¼º<input id="choiced" name="gender" type="radio"  value ="³²¼º" >
+			       					 ¿©¼º<input id="choicee"  name="gender" type="radio"  value ="¿©¼º"> </td>
 			     </tr>
 						
 				<tr>
@@ -82,13 +112,13 @@
 				
 				<tr>
 					<td>¸À ÃëÇâ</td>
-					<td colspan="2">´Ü¸À<input name="favorite" type="radio"  value ="´Ü¸À" >
-					¾´¸À<input name="favorite" type="radio"  value ="¾´¸À" >
-					½Å¸À<input name="favorite" type="radio"  value ="½Å¸À" ></td>
+					<td id="choice" colspan="2">´Ü¸À<input id="choicea"  name="favorite" type="radio"  value ="´Ü¸À" >
+					¾´¸À<input id="choiceb" name="favorite" type="radio"  value ="¾´¸À" >
+					½Å¸À<input id="choicec" name="favorite" type="radio"  value ="½Å¸À" ></td>
 				</tr>
 	
 				<tr>
-					<td colspan="3"><input type="submit" value="°¡ÀÔ" class="button fit">	</td>
+					<td id="sumbit" colspan="3"><input  type="submit" value="°¡ÀÔ" class="button fit">	</td>
 				</tr>
 	
 			</table>
