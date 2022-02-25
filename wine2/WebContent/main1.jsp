@@ -6,14 +6,74 @@
 		<title>Forty by HTML5 UP</title>
 		<meta charset="EUC-KR" />
 		<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="js/jquery-3.6.0.js"></script>
+		<style>
+			body {
+			background-color : gray;
+       			 height: 100vh;
+     		  	 background-image: url('images/wine_main1_1.jpg.png');
+      			background-repeat : no-repeat;
+        		background-size : 50%;
+				 opacity: 0.5;
+     		 }
+			
+			#first, #second{ 
+
+			display : flex;
+			align-items : center;
+			justify-content : center;
+			flex-direction : column;
+			width : 22%;
+			height : 20%;
+			background-color: #ffffff;
+        	opacity: 0.5;
+			font-size : large;
+			border-style: solid; border-width: 10px 10px 10px 10px; 
+			padding: 12px; 
+			word-break: break-all; 	
+			border-radius : 80px 80px 80px 80px;
+			font-weight : bold;
+			
+			}
+			
+			#zero{
+				position : absolute;
+				top : 20%;
+				left : 45%;
+				font-size : 150px;
+				font-weight : bold;
+			}
+			
+			#first{
+				position : absolute;
+				top : 50%;
+				left : 45%;
+			}
+
+			#second{
+				position : absolute;
+				top : 50%;
+				left : 70%;
+			}
+
+
+			 
+		</style>
 	</head>
 	<body>
+
+		<div id=zero>
+			WINE학개론
+		</div>
+
+		<div id=first>
+			<h1><a href ="Login.jsp" style="text-decoration-line : none;">로그인</a></h1>
+		</div>
+
 	
-	<a href ="Login.jsp">로그인</a>
-	<a href ="Join.jsp">회원가입</a>
-	
+		<div id = second>
+			<h1><a href ="Join.jsp" style="text-decoration-line : none;">회원가입</a></h1>
+		</div>
 
 	</body>
 </html>
