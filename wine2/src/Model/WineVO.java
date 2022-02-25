@@ -13,6 +13,13 @@ public class WineVO {
 	private String info_con;
 	private String info_img;
 	
+	
+	
+	public WineVO(String info_name) {
+		super();
+		this.info_name = info_name;
+	}
+
 	public WineVO(int info_num, String info_name, String info_proof, String info_tannin, String info_sugar,
 			String info_acid, String info_body, String info_size, String info_type, String info_con, String info_img) {
 		super();

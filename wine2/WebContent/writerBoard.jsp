@@ -1,5 +1,3 @@
-<%@page import="Model.WineVO"%>
-<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE HTML>
@@ -17,11 +15,6 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="subpage">
-
-
-	<%
-		List<WineVO> list = (List<WineVO>) request.getAttribute("list");
-	%>
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -34,7 +27,7 @@
 						<h1>
 							<a href="index.html" id="logo">Halcyonic</a>
 						</h1>
-						`
+
 						<!-- Nav -->
 						<nav id="nav">
 							<a href="index.html">Homepage</a> <a href="threecolumn.html">Three
@@ -48,37 +41,39 @@
 			</div>
 		</section>
 
+
+
+		<!-- Content -->
 		<section id="content">
-			<div class="container">
-				<div class="row aln-center">
-
-					<%
-						for (WineVO vo : list) {
-					%>
-
-					<div class="col-2 col-12-small">
-						<!-- Box #1 -->
-
-						
-							<section>
-
-								<a href="goInfo?name=<%=vo.getInfo_name() %>"  class="feature-image"><img src="images/wine.jpg"
-									style="max-width: 100%; height: auto;" alt="" /></a>
-								<h4><%=vo.getInfo_num()%></h4>
-
-
-							</section>
-						
-					</div>
-
-					<%
-						}
-					%>
-
-				</div>
+			<div id="board">
+				<form action="writeService" method="post">
+					<table id="list">
+						<tr>
+							<td>제목</td>
+							<td><input type="text" name="title"></td>
+						</tr>
+						<tr>
+							<td>작성자</td>
+							<td><input type="text" name="writer"></td>
+						</tr>
+						<tr>
+							<td colspan="2">내용</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							 <textarea name="content" rows="10" style="resize: none;"></textarea>
+							 </td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="reset" value="초기화"> 
+								<input type="submit" value="작성하기">
+							</td>
+						</tr>
+					</table>
+				</form>
 			</div>
 		</section>
-
 
 		<!-- Footer -->
 		<section id="footer">

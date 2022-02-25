@@ -7,15 +7,42 @@
 	<select id="selectRecommend" resultType="Model.WineVO">
 		select * from info
 	</select>
-	
-	<insert id = "joinService" parameterType="Model.MemberVO">
-		insert into member values(#{id}, #{pw},#{birth},#{gender},#{email},#{favorite})
+
+	<insert id="joinService" parameterType="Model.MemberVO">
+		insert into member
+		values(#{id}, #{pw},#{birth},#{gender},#{email},#{favorite})
 	</insert>
 
 
-	<select id = "loginService" parameterType="Model.MemberVO" resultType="Model.MemberVO">
+	<select id="loginService" parameterType="Model.MemberVO"
+		resultType="Model.MemberVO">
 		select * from member where id = #{id} and pw = #{pw}
 	</select>
+
+
+	<select id="goInfo" parameterType="Model.WineVO"
+		resultType="Model.WineVO">
+		select * from info
+		where info_name = #{info_name}
+	</select>
+
+
+	<insert id="writeBoard" parameterType="Model.BoardVO">
+		insert into msg_board
+		values(msg_bnum_seq.nextval, #{writer}, #{title}, #{content}, sysdate)
+	</insert>
+
+	<select id="selectBoard" resultType="Model.BoardVO">
+		select * from msg_board
+	</select>
+
+	<select id="viewBoard" resultType="Model.BoardVO">
+		select * from msg_board
+		where num = #{num}
+	</select>
+
+
+	
 	
 	<select id="idCheck" resultType="Model.MemberVO">
 		select * from member

@@ -37,7 +37,7 @@
 										<a href="goRecommend">와인추천</a>
 										<a href="twocolumn1.html">와인백과사전</a>
 										<a href="twocolumn2.html">판매처</a>
-										<a href="onecolumn.html">홍보관</a>
+										<a href="goBoardMain">홍보관</a>
 									</nav>
 
 							</div>

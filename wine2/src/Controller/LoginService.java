@@ -33,7 +33,7 @@ public class LoginService extends HttpServlet {
 			//성공
 			HttpSession session = request.getSession();
 			session.setAttribute("vo", uvo);
-			response.sendRedirect("index.html");
+			response.sendRedirect("index.jsp");
 		}else {
 			//실패
 			response.sendRedirect("main1.jsp");

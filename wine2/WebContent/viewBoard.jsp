@@ -1,8 +1,12 @@
-<%@page import="Model.WineVO"%>
-<%@page import="Model.MemberVO"%>
+<%@page import="Model.BoardVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 <head>
 <title>One Column - Halcyonic by HTML5 UP</title>
@@ -11,11 +15,11 @@
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-
-<%
-	WineVO vo = (WineVO)session.getAttribute("vo");
-%>
 <body class="subpage">
+	<%
+		BoardVO bvo = (BoardVO) request.getAttribute("bvo");
+	%>
+
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -42,37 +46,27 @@
 			</div>
 		</section>
 
+
+
 		<!-- Content -->
 		<section id="content">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
 
-						<!-- Main Content -->
-						<section>
-							<div>
-								<a class="feature-image"><img src="images/wine.jpg"
-									style="max-width: 30%; height: auto;" alt="" /></a>
-							</div>
-							<header>
-								<h2><%=vo.getInfo_name()%></h2>
-								<h3><%=vo.getInfo_type()%></h3>
-								<h3><%=vo.getInfo_proof()%></h3>
-								<h3><%=vo.getInfo_tannin()%></h3>
-								<h3><%=vo.getInfo_sugar()%></h3>
-								<h3><%=vo.getInfo_acid()%></h3>
-								<h3><%=vo.getInfo_body()%></h3>
-								<h3><%=vo.getInfo_size()%></h3>
-							</header>
+			<div id="board">
+				<table id="list">
+					<tr>
+						<td><%=bvo.getTitle()%></td>
+					</tr>
+					<tr>
+						<td><%=bvo.getWriter()%></td>
+					</tr>
+					<tr>
+						<td colspan="2"><%=bvo.getContent()%></td>
+					</tr>
 
-							<p><%=vo.getInfo_con()%></p>
-
-
-						
-						
-						</section>
-					</div>
-				</div>
+					<tr>
+						<td colspan="2"><a href="goBoardMain"><button>뒤로가기</button></a></td>
+					</tr>
+				</table>
 			</div>
 		</section>
 	</div>

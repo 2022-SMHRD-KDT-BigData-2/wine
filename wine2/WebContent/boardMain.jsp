@@ -1,3 +1,7 @@
+<%@page import="Model.BoardVO"%>
+<%@page import="java.util.List"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE HTML>
 <!--
 	Halcyonic by HTML5 UP
@@ -12,6 +16,11 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="subpage">
+	
+	<%
+			List<BoardVO> list = (List<BoardVO>)request.getAttribute("list");
+		%>
+	
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -38,21 +47,20 @@
 				</section>
 
 
-
 			<!-- Content -->
 				<section id="content">
 				<div id="board">
 				<table id = "list">
 					<tr>
-						<td>ë²ˆí˜¸</td>
-						<td>ì œëª©</td>
-						<td>ìž‘ì„±ìž</td>
-						<td>ì‹œê°„</td>
+						<td>¹øÈ£</td>
+						<td>Á¦¸ñ</td>
+						<td>ÀÛ¼ºÀÚ</td>
+						<td>½Ã°£</td>
 					</tr>
 					<%for(BoardVO vo : list){%>
 					<tr>
 						<td><%=vo.getNum() %></td>
-						<%-- ì¿¼ë¦¬ìŠ¤íŠ¸ë§: url?name=value --%>
+						<%-- Äõ¸®½ºÆ®¸µ: url?name=value --%>
 						<td><a href="goViewBoard?num=<%=vo.getNum()%>"><%=vo.getTitle() %></a></td>
 						<td><%=vo.getWriter() %></td>
 						<td><%=vo.getDay() %></td>
@@ -61,8 +69,8 @@
 					
 				</table>
 				
-				<a href="main.jsp"><button id="writer">í™ˆìœ¼ë¡œê°€ê¸°</button></a>
-				<a href="writerBoard.jsp"><button id="writer">ìž‘ì„±í•˜ëŸ¬ê°€ê¸°</button></a>
+				<a href="index.jsp"><button id="writer">È¨À¸·Î°¡±â</button></a>
+				<a href="writerBoard.jsp"><button id="writer">ÀÛ¼ºÇÏ·¯°¡±â</button></a>
 			</div>
 				</section>
 

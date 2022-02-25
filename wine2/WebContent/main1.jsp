@@ -1,7 +1,8 @@
+<%@page import="Model.BoardVO"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html>`
 	<head>
 		<title>Forty by HTML5 UP</title>
 		<meta charset="EUC-KR" />
@@ -81,7 +82,10 @@
 			 
 		</style>
 	</head>
+	
+	
 	<body>
+
 		
 			<img src="images/wine_main1_1.jpg.png">
 	
@@ -105,7 +109,7 @@
 				<td><input name="pw" type="password"  placeholder="PW를 입력하세요"></td>
 			<tr>
 				<td colspan="2"><input id="submit" type="submit" value="로그인" class="button fit">
-				<button id ="join" ><a href="Join.jsp" > 회원가입</a></button></td>
+				<button id ="join" ><a href="Join.jsp"> 회원가입</a></button></td>
 			</tr>
 			</table>
 		</form>	
