@@ -10,7 +10,7 @@
 /* This is for the title text. */
 .cloud-zoom-title {
 	font-family:Arial, Helvetica, sans-serif;
-	position:absolute !important;
+	position:absolute !;
 	background-color:#000;
 	color:#fff;
 	padding:3px;
