@@ -56,12 +56,12 @@
 			<!-- Content -->
 				<section id="content">
 				<div id="board">
-				<table id = "list">
-					<tr>
-						<td>번호</td>
-						<td>제목</td>
-						<td>작성자</td>
-						<td>시간</td>
+				<table id ="list">
+					<tr style = " background-color :  #474f51;">
+						<td style = "color : white;">번호</td>
+						<td style = "color : white;">제목</td>
+						<td style = "color : white;">작성자</td>
+						<td style = "color : white;">시간</td>
 					</tr>
 					<%for(BoardVO vo : list){%>
 					<tr>

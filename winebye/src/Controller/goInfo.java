@@ -30,7 +30,7 @@ public class goInfo extends HttpServlet {
 		request.setAttribute("uvo", uvo);
 
 		// 4. 포워드방식으로 페이지 이동
-		RequestDispatcher rd = request.getRequestDispatcher("viewBoard.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("info.jsp");
 		rd.forward(request, response);
 
 	}

@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,6 +22,7 @@ public class LoginService extends HttpServlet {
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		
+		
 		MemberVO vo = new MemberVO(id, pw);
 	
 		//DAO의 로그인 메서드 사용
@@ -36,7 +39,13 @@ public class LoginService extends HttpServlet {
 			response.sendRedirect("index.jsp");
 		}else {
 			//실패
-			response.sendRedirect("main1.jsp");
+			response.setContentType("text/html;charset=UTF-8");
+			PrintWriter out = response.getWriter();
+			out.println("<script>");
+			out.println("alert('로그인에 실패 하였습니다.')");
+			out.print("location.href = 'main1.jsp';");
+			out.println("</script>");
+			
 		}
 		
 		

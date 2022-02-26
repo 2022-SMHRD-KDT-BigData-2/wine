@@ -13,7 +13,7 @@
 </head>
 
 <%
-	WineVO vo = (WineVO)session.getAttribute("vo");
+	WineVO vo = (WineVO)request.getAttribute("uvo");
 %>
 <body class="subpage">
 	<div id="page-wrapper">
@@ -56,22 +56,41 @@
 						<!-- Main Content -->
 						<section>
 							<div>
-								<a class="feature-image"><img src="images/wine.jpg"
-									style="max-width: 30%; height: auto;" alt="" /></a>
+								<a class="feature-image"><img src="<%=vo.getInfo_img() %>"
+									style="max-width: 30%; height: auto; float:left;" alt="" /></a>
 							</div>
 							<header>
 								<h2><%=vo.getInfo_name()%></h2>
 								
 							</header>
+								<h3 style="font-weight:bold">와인종류</h3>
 								<h3><%=vo.getInfo_type()%></h3>
-								<h3><%=vo.getInfo_proof()%></h3>
-								<h3><%=vo.getInfo_tannin()%></h3>
-								<h3><%=vo.getInfo_sugar()%></h3>
-								<h3><%=vo.getInfo_acid()%></h3>
-								<h3><%=vo.getInfo_body()%></h3>
-								<h3><%=vo.getInfo_size()%></h3>
+								<br>
+								<h3 style="font-weight:bold">도수&nbsp;&nbsp; >&nbsp;&nbsp;
+								<span style="font-weight:normal"><%=vo.getInfo_proof()%></span>
+								</h3>
+								<h3 style="font-weight:bold">타닌&nbsp;&nbsp; >&nbsp;&nbsp;
+								<span style="font-weight:normal"><%=vo.getInfo_tannin()%></span>
+								</h3>
+								<h3 style="font-weight:bold">당도 &nbsp;&nbsp;>&nbsp;&nbsp;
+								<span style="font-weight:normal"><%=vo.getInfo_sugar()%></span>
+								</h3>
+								<h3 style="font-weight:bold">산도&nbsp;&nbsp; >&nbsp;&nbsp;
+								<span style="font-weight:normal"><%=vo.getInfo_acid()%></span>
+								</h3>
+								<h3 style="font-weight:bold">바디&nbsp;&nbsp; >&nbsp;&nbsp;
+								<span style="font-weight:normal"><%=vo.getInfo_body()%></span>
+								</h3>
+								<h3 style="font-weight:bold">용량 &nbsp;&nbsp;>&nbsp;&nbsp;
+								<span style="font-weight:normal"><%=vo.getInfo_size()%></span>
+								</h3>
+								
 							
-
+								<br>
+								<br>
+								<br>
+									
+							<h3>와인설명</h3>
 							<p><%=vo.getInfo_con()%></p>
 
 

@@ -20,7 +20,7 @@
 
 
 	<%
-		List<WineVO> list = (List<WineVO>) request.getAttribute("list");
+		List<WineVO> list = (List<WineVO>)request.getAttribute("list");
 	%>
 	<div id="page-wrapper">
 
@@ -66,10 +66,12 @@
 
 						
 							<section>
-								<h3><%=vo.getInfo_name() %></h3>
-								<a href="goInfo?name=<%=vo.getInfo_name() %>"  class="feature-image"><img src="images/wine.jpg"
-									style="max-width: 100%; height: auto;" alt="" /></a>
-								<h4><%=vo.getInfo_num()%></h4>
+								
+								<a href="goInfo?info_name=<%=vo.getInfo_name() %>"  class="feature-image"><img src="<%=vo.getInfo_img() %>"
+									style="max-width: 100%; height: auto; " alt="" /></a>
+								
+								<h3 style="overflow-x:auto; overflow-y:auto;"><%=vo.getInfo_name() %></h3>
+								<h4><%=vo.getInfo_type()%></h4>
 
 
 							</section>

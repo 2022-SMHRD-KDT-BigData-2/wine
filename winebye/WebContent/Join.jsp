@@ -38,6 +38,7 @@
 		text-align : center;
 		font-size : 80%;
 		font-weight : bold;
+		cursor:pointer;
 	}
 		
 	th{
@@ -50,10 +51,9 @@
   }
 	
 	
-		input::placeholder {
+	input::placeholder {
   		color: red;
   		font-style: italic;
-
 	}
 	
 	
@@ -64,10 +64,26 @@
         font-size: 20px;
       }
       
-      #submit{
-       width: 20%;
+       input[type=submit]{
+     	 color : white;
+      	 width: 40%;
         padding: 10px 10px;
         font-size: 20px;
+        box-shadow:inset 0px 1px 3px 0px #91b8b3;
+		background:linear-gradient(to left, #ce4869, #ce4444 );
+		background-color:gray;
+      	
+      }
+      
+        #join{
+        color : white;
+        width: 40%;
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+		box-shadow:inset 0px 1px 3px 0px #91b8b3;
+		background:linear-gradient(to left, #ce4869, #ce4444 );
+		background-color:gray;
+      	cursor:pointer;
       }
       
       #choicea, #choiceb, #choicec,#choiced, #choicee{
@@ -124,7 +140,7 @@
 					<td>ID</td>
 					<td colspan="2"><input id="check" name="id" type="text"  placeholder="id를 입력하세요">
 					<p id="result"></p>
-					<button type="button" onClick="idCheck()">중복 확인</button>
+					<button id ="join" type="button" onClick="idCheck()">중복 확인</button>
 				</tr>
 				
 				<tr>
@@ -158,7 +174,7 @@
 				</tr>
 	
 				<tr>
-					<td id="sumbit" colspan="3"><input  type="submit" value="가입" class="button fit">	</td>
+					<td colspan="3"><input id="sumbit" type="submit" value="가입" class="button fit">	</td>
 				</tr>
 	
 			</table>
