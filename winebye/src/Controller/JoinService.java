@@ -47,7 +47,7 @@ public class JoinService extends HttpServlet {
 		
 		if(cnt >0) {
 			//성공
-			response.sendRedirect("index.html");
+			response.sendRedirect("index.jsp");
 		}else {
 			//실패
 			response.sendRedirect("main1.jsp");
