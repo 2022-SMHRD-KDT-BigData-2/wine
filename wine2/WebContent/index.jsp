@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
-<!DOCTYPE HTML>
+<!DOCTYPE HTML>                                                                                                               
 <!--
 	Halcyonic by HTML5 UP
 	html5up.net | @ajlkn
