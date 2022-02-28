@@ -56,7 +56,7 @@
 			<!-- Content -->
 				<section id="content">
 				<div id="board">
-				<table id ="list">
+				<table id ="list" style="padding:40px;">
 					<tr style = " background-color :  #474f51;">
 						<td style = "color : white;">번호</td>
 						<td style = "color : white;">제목</td>
@@ -75,7 +75,7 @@
 					
 				</table>
 				
-				<a href="index.jsp"><button id="writer">홈으로가기</button></a>
+				<a href="index.jsp" style="padding:40px;"><button id="writer">홈으로가기</button></a>
 				<a href="writerBoard.jsp"><button id="writer">작성하러가기</button></a>
 			</div>
 				</section>

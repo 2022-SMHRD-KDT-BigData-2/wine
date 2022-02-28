@@ -53,26 +53,26 @@
 		<section id="content">
 			<div id="board">
 				<form action="writeService" method="post">
-					<table id="list">
-						<tr>
-							<td>제목</td>
-							<td><input type="text" name="title"></td>
+					<table style= "width:100%;  border: 1px solid #444444; background-color:#474f51; padding:40px;" id="list">
+						<tr style= "background-color:white">
+							<td >제목</td>
+							<td><input style= "width:100%;" type="text" name="title"></td>
+						</tr>
+						<tr style= "background-color:white">
+							<td >작성자</td>
+							<td><input style= "width:100%;" type="text" name="writer"></td>
 						</tr>
 						<tr>
-							<td>작성자</td>
-							<td><input type="text" name="writer"></td>
+							<td style="background-color:white" colspan="2">내용</td>
 						</tr>
 						<tr>
-							<td colspan="2">내용</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-							 <textarea name="content" rows="10" style="resize: none;"></textarea>
+							<td style="background-color:white" colspan="2">
+							 <textarea style= "width:100%;" name="content" rows="10" style="resize: none;"></textarea>
 							 </td>
 						</tr>
 						<tr>
 							<td colspan="2">
-								<input type="reset" value="초기화"> 
+								<input type="reset" value="뒤로가기"> 
 								<input type="submit" value="작성하기">
 							</td>
 						</tr>

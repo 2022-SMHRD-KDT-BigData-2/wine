@@ -84,7 +84,9 @@
 								<h3 style="font-weight:bold">용량 &nbsp;&nbsp;>&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_size()%></span>
 								</h3>
-								
+								<h3 style="font-weight:bold">어울리는 음식&nbsp;&nbsp;>&nbsp;&nbsp;
+								<span style="font-weight:normal"><%=vo.getInfo_food()%></span>
+								</h3>
 							
 								<br>
 								<br>
@@ -94,6 +96,8 @@
 							<p><%=vo.getInfo_con()%></p>
 
 
+		<h3>와인태그</h3>
+		<p><%=vo.getInfo_tag() %>
 						
 						
 						</section>

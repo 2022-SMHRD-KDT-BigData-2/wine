@@ -11,17 +11,13 @@ public class WineVO {
 	private String info_size;
 	private String info_type;
 	private String info_con;
+	private String info_food;
+	private String info_tag;
 	private String info_img;
-	
-	
-	
-	public WineVO(String info_name) {
-		super();
-		this.info_name = info_name;
-	}
 
 	public WineVO(int info_num, String info_name, String info_proof, String info_tannin, String info_sugar,
-			String info_acid, String info_body, String info_size, String info_type, String info_con, String info_img) {
+			String info_acid, String info_body, String info_size, String info_type, String info_con, String info_food,
+			String info_tag, String info_img) {
 		super();
 		this.info_num = info_num;
 		this.info_name = info_name;
@@ -33,7 +29,14 @@ public class WineVO {
 		this.info_size = info_size;
 		this.info_type = info_type;
 		this.info_con = info_con;
+		this.info_food = info_food;
+		this.info_tag = info_tag;
 		this.info_img = info_img;
+	}
+
+	public WineVO(String info_name) {
+		super();
+		this.info_name = info_name;
 	}
 
 	public int getInfo_num() {
@@ -116,6 +119,22 @@ public class WineVO {
 		this.info_con = info_con;
 	}
 
+	public String getInfo_food() {
+		return info_food;
+	}
+
+	public void setInfo_food(String info_food) {
+		this.info_food = info_food;
+	}
+
+	public String getInfo_tag() {
+		return info_tag;
+	}
+
+	public void setInfo_tag(String info_tag) {
+		this.info_tag = info_tag;
+	}
+
 	public String getInfo_img() {
 		return info_img;
 	}
@@ -123,7 +142,5 @@ public class WineVO {
 	public void setInfo_img(String info_img) {
 		this.info_img = info_img;
 	}
-	
-	
-	
+
 }

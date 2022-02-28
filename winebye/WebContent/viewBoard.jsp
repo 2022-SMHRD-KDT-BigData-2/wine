@@ -14,6 +14,16 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			table {
+				width: 100%;
+				padding:20px;
+			}
+			td {
+				padding: 20px;
+				border: 1px ;
+			}
+		</style>
 </head>
 <body class="subpage">
 	<%
@@ -58,15 +68,15 @@
 		<section id="content">
 
 			<div id="board">
-				<table id="list">
-					<tr>
-						<td><%=bvo.getTitle()%></td>
+				<table style= "width:100%;  border: 1px solid #444444; background-color:#474f51" id="list">
+					<tr style= "border: 1px solid #444444; ">
+						<td style="background-color:white">제목 : <%=bvo.getTitle()%></td>
 					</tr>
 					<tr>
-						<td><%=bvo.getWriter()%></td>
+						<td style="background-color:white">작성자 : <%=bvo.getWriter()%></td>
 					</tr>
 					<tr>
-						<td colspan="2"><%=bvo.getContent()%></td>
+						<td style="background-color:white; height:400px; " colspan="2">내용 :<%=bvo.getContent()%></td>
 					</tr>
 
 					<tr>
