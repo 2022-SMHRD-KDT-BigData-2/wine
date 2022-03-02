@@ -1,3 +1,4 @@
+<%@page import="Model.SellVO"%>
 <%@page import="Model.WineVO"%>
 <%@page import="Model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
@@ -5,15 +6,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+
 <title>One Column - Halcyonic by HTML5 UP</title>
 <meta charset="utf-8" />
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<script src="js/jquery-3.6.0.js"></script>
 </head>
 
 <%
 	WineVO vo = (WineVO)request.getAttribute("uvo");
+	SellVO svo = (SellVO)request.getAttribute("svo");
+
 %>
 <body class="subpage">
 	<div id="page-wrapper">
@@ -95,8 +102,54 @@
 									
 							<h3>와인설명</h3>
 							<p><%=vo.getInfo_con()%></p>
+	<br><br>
 
+		
+			<header>
+								<h2>판매처</h2>
+							</header>
+							<div id="map" style="width: 100%; height: 350px;"></div>
 
+							<script type="text/javascript"
+								src="//dapi.kakao.com/v2/maps/sdk.js?appkey=638eaa79c50c282089a6eb96c790c030"></script>
+							<script>
+								var mapContainer = document
+										.getElementById('map'), // 지도를 표시할 div 
+								mapOption = {
+									center : new kakao.maps.LatLng(<%=svo.getSell_mark()%>), // 지도의 중심좌표
+									level : 4
+								// 지도의 확대 레벨
+								};
+
+								var map = new kakao.maps.Map(mapContainer,
+										mapOption); // 지도를 생성합니다
+
+								var imageSrc ="images/pngwing.com.png" , // 마커이미지의 주소입니다    
+								imageSize = new kakao.maps.Size(65, 65), // 마커이미지의 크기입니다
+								imageOption = {
+									offset : new kakao.maps.Point(27, 69)
+								}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+								// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+								var markerImage = new kakao.maps.MarkerImage(
+										imageSrc, imageSize, imageOption), markerPosition = new kakao.maps.LatLng(<%=svo.getSell_mark()%>); // 마커가 표시될 위치입니다
+
+								// 마커를 생성합니다
+								var marker = new kakao.maps.Marker({
+									position : markerPosition,
+									image : markerImage
+								// 마커이미지 설정 
+								});
+
+								// 마커가 지도 위에 표시되도록 설정합니다
+								marker.setMap(map);
+							</script>
+							<br>
+							<p>회사명 : <%=svo.getSell_name() %></p>
+							<p>주소 : <%=svo.getSell_address() %></p>
+							<p>연락처 : <%=svo.getSell_phone() %></p>
+							<p>홈페이지 : <a href = "<%=svo.getSell_url() %>"><%=svo.getSell_url() %></a> </p>
+		
 		
 		
 						
@@ -110,69 +163,106 @@
 
 
 	<!-- Footer -->
-	<section id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-8 col-12-medium">
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-10 col-12-medium">
 
-					<!-- Links -->
-					<section>
-						<h2>Links to Important Stuff</h2>
-						<div>
-							<div class="row">
-								<div class="col-3 col-12-small">
-									<ul class="link-list last-child">
-										<li><a href="#">Neque amet dapibus</a></li>
-										<li><a href="#">Sed mattis quis rutrum</a></li>
-										<li><a href="#">Accumsan suspendisse</a></li>
-										<li><a href="#">Eu varius vitae magna</a></li>
-									</ul>
-								</div>
-								<div class="col-3 col-12-small">
-									<ul class="link-list last-child">
-										<li><a href="#">Neque amet dapibus</a></li>
-										<li><a href="#">Sed mattis quis rutrum</a></li>
-										<li><a href="#">Accumsan suspendisse</a></li>
-										<li><a href="#">Eu varius vitae magna</a></li>
-									</ul>
-								</div>
-								<div class="col-3 col-12-small">
-									<ul class="link-list last-child">
-										<li><a href="#">Neque amet dapibus</a></li>
-										<li><a href="#">Sed mattis quis rutrum</a></li>
-										<li><a href="#">Accumsan suspendisse</a></li>
-										<li><a href="#">Eu varius vitae magna</a></li>
-									</ul>
-								</div>
-								<div class="col-3 col-12-small">
-									<ul class="link-list last-child">
-										<li><a href="#">Neque amet dapibus</a></li>
-										<li><a href="#">Sed mattis quis rutrum</a></li>
-										<li><a href="#">Accumsan suspendisse</a></li>
-										<li><a href="#">Eu varius vitae magna</a></li>
-									</ul>
+								<!-- Links -->
+									<section>
+										<h2>와인 관련 사이트</h2>
+										<div>
+											<div class="row">
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li>와인21</li>
+														<li>소믈리에타임즈</li>
+														<li>와인OK</li>
+													
+													</ul>
+												</div>
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="https://www.wine21.com/">https://www.wine21.com</a></li>
+														<li><a href="http://www.sommeliertimes.com/">http://www.sommeliertimes.com/</a></li>
+														<li><a href="http://www.wineok.com/">http://www.wineok.com/</a></li>
+													</ul>	
+												</div>
+					
+						
+										<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li>영국와인잡지</li>
+														<li>미국와인잡지</li>
+														<li>와인교육프로그램</li>
+													
+													</ul>
+												</div>
+												
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="https://www.decanter.com/">https://www.decanter.com/</a></li>
+														<li><a href="https://www.winespectator.com/">https://www.winespectator.com/</a></li>
+														<li><a href="https://www.wsetglobal.com/">https://www.wsetglobal.com/</a></li>
+														</ul>
+												</div>
+						
+						
+						
+
+											</div>
+										</div>
+									</section>
+									
+									<section>
+									<br>
+							<h2>한국 와인 판매처</h2>
+							<div>
+								<div class="row">
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											<li><a href="twocolumn3.html">여포와인 농장</a></li>
+											<li><a href="twocolumn4.html">컨츄리 농원</a></li>
+											
+										</ul>
+									</div>
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											<li><a href="twocolumn5.html">고도리 와이너리</a></li>
+											<li><a href="twocolumn6.html">샤토미소 도란원</a></li>
+											
+										</ul>
+									</div>
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											
+											<li><a href="twocolumn7.html">산막 와이너리</a></li>
+											<li><a href="twocolumn8.html">그랑꼬도 와이너리</a></li>
+											
+										</ul>
+									</div>
+									
 								</div>
 							</div>
+						</section>
+									
+									
+
+							</div>
+							<div class="col-4 col-12-medium imp-medium">
+
+								<!-- Blurb -->
+									<section>
+										<h2>&nbsp;</h2>
+										<p>
+											&nbsp;
+										</p>
+									</section>
+
+							</div>
 						</div>
-					</section>
-
-				</div>
-				<div class="col-4 col-12-medium imp-medium">
-
-					<!-- Blurb -->
-					<section>
-						<h2>An Informative Text Blurb</h2>
-						<p>Duis neque nisi, dapibus sed mattis quis, rutrum accumsan
-							sed. Suspendisse eu varius nibh. Suspendisse vitae magna eget
-							odio amet mollis. Duis neque nisi, dapibus sed mattis quis, sed
-							rutrum accumsan sed. Suspendisse eu varius nibh lorem ipsum amet
-							dolor sit amet lorem ipsum consequat gravida justo mollis.</p>
-					</section>
-
-				</div>
-			</div>
-		</div>
-	</section>
+					</div>
+				</section>
 
 	<!-- Copyright -->
 	<div id="copyright">

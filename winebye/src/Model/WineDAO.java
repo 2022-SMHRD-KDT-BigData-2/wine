@@ -50,4 +50,13 @@ private static SqlSessionFactory sqlSessionFactory;
 		
 		return uvo;
 	}
+	public SellVO goSell(String sell_wine) {
+		SqlSession session = sqlSessionFactory.openSession();
+		
+		SellVO svo = session.selectOne("goSell", sell_wine);
+		
+		session.close();
+		
+		return svo;
+	}
 }

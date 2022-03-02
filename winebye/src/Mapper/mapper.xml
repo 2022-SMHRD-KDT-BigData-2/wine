@@ -24,6 +24,10 @@
 		select * from info
 		where info_name = #{info_name}
 	</select>
+	<select id="goSell" resultType="Model.SellVO">
+		select * from sell
+		where sell_wine = #{sell_wine}
+	</select>
 
 
 	<insert id="writeBoard" parameterType="Model.BoardVO">

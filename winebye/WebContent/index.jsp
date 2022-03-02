@@ -20,48 +20,58 @@
    background: url("images/bg02.jpg");
     color: #c6c8c8;
     padding: 16px;
-    font-size: 1.1em;
+    font-size: 1.4em;
     border: none;
     cursor: pointer;
 }
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background: url("images/bg02.jpg");
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+.dropdown{
     position: relative;
     display: inline-block;
+    border : 1px;
+}
+
+.dropdown2{
+    position: relative;
+    display: inline-block;
+    border : 1px;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: #c6c8c8;
     padding: 12px 16px;
-    text-decoration: none;
+    font-size: 1.0em;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: white}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 		
-		
-		
-		
+		#ah1,#ah2,#ah3,#ah4,#ah5,#ah6{
+		font-size: 1em !important;
+		margin : 0 !important;
+		border-color : black !important;
+		border : 1px solid !important;
+		}	
 		</style>
 	</head>
 	<body>
@@ -87,20 +97,32 @@
 									<nav id="nav">
 										
 										<a href="goRecommend">와인추천</a>
-										<a href="twocolumn1.html">와인백과사전</a>
+										
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 										
 										<div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">게시판</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="goBoardMain">자유게시판</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-</div>
-										
-										
-										
-										<a href="twocolumn2.html">와이너리맵</a>
+								<button onclick="myFunction()" class="dropbtn">와인백과사전</button>
+								<div id="myDropdown" class="dropdown-content">
+									<a id="ah1" href="twocolumn1.html">▶와인용어</a> 
+									<a id="ah2" href="twocolumn1_1.html">▶와인즐기기</a> 
+									<a id="ah3" href="twocolumn1_2.html">▶한국와인 차이점</a> 
+									<a id="ah4" href="twocolumn1_3.html">▶와인잔</a> 
+
+								</div>
+							</div>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+							<div class="dropdown2">
+								<button onclick="myFunction2()" class="dropbtn">게시판</button>
+								<div id="myDropdown2" class="dropdown-content">
+									<a id="ah5" href="goBoardMain">▶자유게시판</a> 
+									<a id="ah6"href="#">▶홍보 게시판</a>
+								</div>
+							</div>
+
+
+
+							<a href="twocolumn2.html">와이너리맵</a>
 									</nav>
 
 							</div>
@@ -375,6 +397,25 @@
 		
 		function myFunction() {
 		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		      var openDropdown = dropdowns[i];
+		      if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+		
+		function myFunction2() {
+		    document.getElementById("myDropdown2").classList.toggle("show");
 		}
 
 		// Close the dropdown menu if the user clicks outside of it
