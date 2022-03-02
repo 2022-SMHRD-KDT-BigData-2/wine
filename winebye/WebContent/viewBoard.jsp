@@ -69,13 +69,16 @@
 			<div id="board">
 				<table style= "width:100%;  border: 1px solid #444444; background-color:#474f51" id="list">
 					<tr style= "border: 1px solid #444444; ">
-						<td style="background-color:white">제목 : <%=bvo.getTitle()%></td>
+						<td style="background-color:white; width: 10%; text-align : center;">제목</td>
+						<td style="background-color:white"><%=bvo.getTitle()%></td>
 					</tr>
 					<tr>
-						<td style="background-color:white">작성자 : <%=bvo.getWriter()%></td>
+						<td style="background-color:white; width: 10%;text-align : center;">작성자</td>
+						<td style="background-color:white"><%=bvo.getWriter()%></td>
 					</tr>
 					<tr>
-						<td style="background-color:white; height:400px; " colspan="2">내용 :<%=bvo.getContent()%></td>
+						<td style="background-color:white; height:400px; width: 10%; text-align : center;">내용 </td>
+						<td style="background-color:white; height:400px; "><%=bvo.getContent()%></td>
 					</tr>
 
 					<tr>

@@ -55,7 +55,7 @@
 			<!-- Content -->
 				<section id="content">
 				<div id="board">
-				<table id ="list" style="padding:40px;">
+				<table id ="list" style="padding:40px;text-align : center;">
 					<tr style = " background-color :  #474f51;">
 						<td style = "color : white;">번호</td>
 						<td style = "color : white;">제목</td>
@@ -63,10 +63,10 @@
 						<td style = "color : white;">시간</td>
 					</tr>
 					<%for(BoardVO vo : list){%>
-					<tr>
-						<td><%=vo.getNum() %></td>
+					<tr style="background-color : white;">
+						<td ><%=vo.getNum() %></td>
 						<%-- 쿼리스트링: url?name=value --%>
-						<td><a href="goViewBoard?num=<%=vo.getNum()%>"><%=vo.getTitle() %></a></td>
+						<td><a style="text-decoration-line : none;" href="goViewBoard?num=<%=vo.getNum()%>"> <span style="color:#96a9b5"><%=vo.getChoose()%>&nbsp;</span>  <%=vo.getTitle() %></a></td>
 						<td><%=vo.getWriter() %></td>
 						<td><%=vo.getDay() %></td>
 					</tr>

@@ -1,3 +1,4 @@
+<%@page import="Model.MemberVO"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
 <!DOCTYPE HTML>
@@ -15,6 +16,12 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 <body class="subpage">
+
+
+	<%
+		MemberVO vo = (MemberVO)session.getAttribute("vo");
+			
+	%>
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -54,13 +61,28 @@
 				<form action="writeService" method="post">
 					<table style= "width:100%;  border: 1px solid #444444; background-color:#474f51; padding:40px;" id="list">
 						<tr style= "background-color:white">
+							<td>와인</td>
+							<td><select name="choose" size="1">
+									<option value="컨츄리캠벨(스위트)">컨츄리캠벨(스위트)</option>
+									<option value="화이트 스위트750">화이트 스위트750</option>
+									<option value="그랑꼬또 레드스위트 M5610">그랑꼬또 레드스위트 M5610</option>
+									<option value="도란원 레드미소27">도란원 레드미소27</option>
+									<option value="산막 와이너리비원">산막 와이너리비원</option>
+									<option value="고도리 샤인머스켓 와인">고도리 샤인머스켓 와인</option>
+									<option value="키위 화이트와인7004S">키위 화이트와인7004S</option>
+									<option value="프리미엄 스위트 와인">프리미엄 스위트 와인</option>
+									<option value="시나브로 스파클링 와인">시나브로 스파클링 와인</option>
+									<option value="샤토마니 스위트 레드">샤토마니 스위트 레드</option>
+								</select>
+							
+							</td>
+						</tr>
+						<tr style= "background-color:white">
 							<td >제목</td>
 							<td><input style= "width:100%;" type="text" name="title"></td>
 						</tr>
-						<tr style= "background-color:white">
-							<td >작성자</td>
-							<td><input style= "width:100%;" type="text" name="writer"></td>
-						</tr>
+						
+						
 						<tr>
 							<td style="background-color:white" colspan="2">내용</td>
 						</tr>
@@ -71,7 +93,8 @@
 						</tr>
 						<tr>
 							<td colspan="2">
-								<input type="reset" value="뒤로가기"> 
+								<input type="button" value="뒤로가기" onclick="history.back(-1);">
+								<input type="reset" value="초기화"> 
 								<input type="submit" value="작성하기">
 							</td>
 						</tr>

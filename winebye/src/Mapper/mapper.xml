@@ -28,7 +28,7 @@
 
 	<insert id="writeBoard" parameterType="Model.BoardVO">
 		insert into msg_board
-		values(msg_bnum_seq.nextval, #{writer}, #{title}, #{content}, sysdate)
+		values(msg_bnum_seq.nextval,#{choose}, #{writer}, #{title}, #{content}, sysdate)
 	</insert>
 
 	<select id="selectBoard" resultType="Model.BoardVO">
