@@ -34,10 +34,9 @@
 
 								<!-- Nav -->
 									<nav id="nav">
-										<a href="index.jsp">메인으로</a>
+										
 										<a href="goRecommend">와인추천</a>
 										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="twocolumn3.html">판매처</a>
 										<a href="goBoardMain">홍보관</a>
 										<a href="twocolumn2.html">와이너리맵</a>
 									</nav>
@@ -69,8 +68,13 @@
 				</section>
 
 			<!-- Features -->
+			
 				<section id="features">
 					<div class="container">
+				<span style="font-size: 35px; color:white">한국와인 유튜브</span>
+				<br>
+				<br>
+					
 						<div class="row">
 							<div class="col-3 col-6-medium col-12-small">
 
@@ -134,7 +138,7 @@
 								<!-- Box #1 -->
 									<section>
 										<header>
-											<h2>와인 여행지</h2>
+											<h2>한국와인 여행지</h2>
 											<h3>WINE TRAVEL</h3>
 										</header>
 										<a href="http://www.wmuseum.co.kr/" class="feature-image"><img src="images/wine6.jpg" alt="" /></a>
@@ -151,24 +155,24 @@
 								<!-- Box #2 -->
 									<section>
 										<header>
-											<h2>와인 랭킹</h2>
-											<h3>WINE RANK</h3>
+											<h2>와인 관련 영화</h2>
+											<h3>WINE MOVIE</h3>
 										</header>
 										<ul class="quote-list">
 											<li>
-												<img src="images/pic06.jpg" alt="" />
-												<p>"1. 와인"</p>
-												<span>와인명</span>
+												<img src="images/movie1.jpg" alt="" />
+												<p>"1. 몬도비노"</p>
+												<span>2004년작</span>
 											</li>
 											<li>
-												<img src="images/pic07.jpg" alt="" />
-												<p>"2. 와인"</p>
-												<span>와인명</span>
+												<img src="images/movie2.jpg" alt="" />
+												<p>"2. 사이드웨이즈"</p>
+												<span>2004년작</span>
 											</li>
 											<li>
-												<img src="images/pic08.jpg" alt="" />
-												<p>"3. 와인"</p>
-												<span>와인명</span>
+												<img src="images/movie3.jpg" alt="" />
+												<p>"3. 와인미라클"</p>
+												<span>2008년작</span>
 											</li>
 										</ul>
 									</section>
@@ -179,7 +183,7 @@
 								<!-- Box #3 -->
 									<section>
 										<header>
-											<h2>와인 추천 도서</h2>
+											<h2>와인 관련 추천 도서</h2>
 											<h3>WINE BOOK</h3>
 											<h3>&nbsp;</h3>
 										</header>
@@ -198,7 +202,7 @@
 				<section id="footer">
 					<div class="container">
 						<div class="row">
-							<div class="col-8 col-12-medium">
+							<div class="col-10 col-12-medium">
 
 								<!-- Links -->
 									<section>
@@ -208,24 +212,77 @@
 												<div class="col-3 col-12-small">
 													<ul class="link-list last-child">
 														<li>와인21</li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
+														<li>소믈리에타임즈</li>
+														<li>와인OK</li>
+													
 													</ul>
 												</div>
 												<div class="col-3 col-12-small">
 													<ul class="link-list last-child">
 														<li><a href="https://www.wine21.com/">https://www.wine21.com</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
+														<li><a href="http://www.sommeliertimes.com/">http://www.sommeliertimes.com/</a></li>
+														<li><a href="http://www.wineok.com/">http://www.wineok.com/</a></li>
+													</ul>	
+												</div>
+					
+						
+										<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li>영국와인잡지</li>
+														<li>미국와인잡지</li>
+														<li>와인교육프로그램</li>
+													
 													</ul>
 												</div>
-
+												
+												<div class="col-3 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="https://www.decanter.com/">https://www.decanter.com/</a></li>
+														<li><a href="https://www.winespectator.com/">https://www.winespectator.com/</a></li>
+														<li><a href="https://www.wsetglobal.com/">https://www.wsetglobal.com/</a></li>
+														</ul>
+												</div>
+						
+						
+						
 
 											</div>
 										</div>
 									</section>
+									
+									<section>
+									<br>
+							<h2>한국 와인 판매처</h2>
+							<div>
+								<div class="row">
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											<li><a href="twocolumn3.html">여포와인 농장</a></li>
+											<li><a href="twocolumn4.html">컨츄리 농원</a></li>
+											
+										</ul>
+									</div>
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											<li><a href="twocolumn5.html">고도리 와이너리</a></li>
+											<li><a href="twocolumn6.html">샤토미소 도란원</a></li>
+											
+										</ul>
+									</div>
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											
+											<li><a href="twocolumn7.html">산막 와이너리</a></li>
+											<li><a href="twocolumn8.html">그랑꼬도 와이너리</a></li>
+											
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</section>
+									
+									
 
 							</div>
 							<div class="col-4 col-12-medium imp-medium">

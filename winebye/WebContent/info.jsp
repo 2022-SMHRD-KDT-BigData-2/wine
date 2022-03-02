@@ -33,11 +33,10 @@
 									<h1><a href="index.jsp" id="logo">Wine</a></h1>
 
 								<!-- Nav -->
-									<nav id="nav">
-										<a href="index.jsp">메인으로</a>
+										<nav id="nav">
+										
 										<a href="goRecommend">와인추천</a>
 										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="twocolumn3.html">판매처</a>
 										<a href="goBoardMain">홍보관</a>
 										<a href="twocolumn2.html">와이너리맵</a>
 									</nav>
@@ -56,7 +55,7 @@
 						<!-- Main Content -->
 						<section>
 							<div>
-								<a class="feature-image"><img src="<%=vo.getInfo_img() %>"
+								<a class="feature-image"><img src="<%=vo.getInfo_img()%>"
 									style="max-width: 30%; height: auto; float:left;" alt="" /></a>
 							</div>
 							<header>
@@ -87,6 +86,8 @@
 								<h3 style="font-weight:bold">어울리는 음식&nbsp;&nbsp;>&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_food()%></span>
 								</h3>
+								
+								<p style="color:red;"><%=vo.getInfo_tag() %>
 							
 								<br>
 								<br>
@@ -96,8 +97,8 @@
 							<p><%=vo.getInfo_con()%></p>
 
 
-		<h3>와인태그</h3>
-		<p><%=vo.getInfo_tag() %>
+		
+		
 						
 						
 						</section>

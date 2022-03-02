@@ -38,11 +38,10 @@
 									<h1><a href="index.jsp" id="logo">Wine</a></h1>
 
 								<!-- Nav -->
-									<nav id="nav">
-										<a href="index.jsp">메인으로</a>
+										<nav id="nav">
+										
 										<a href="goRecommend">와인추천</a>
 										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="twocolumn3.html">판매처</a>
 										<a href="goBoardMain">홍보관</a>
 										<a href="twocolumn2.html">와이너리맵</a>
 									</nav>

@@ -32,15 +32,19 @@ public class LoginService extends HttpServlet {
 		//성공했는지 실패했는지 판단
 		//성공했으면 session에 DB에서 꺼내온 유저정보를 저장
 		//실패하면 저장X
+		
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		
 		if( uvo != null) {
 			//성공
 			HttpSession session = request.getSession();
 			session.setAttribute("vo", uvo);
-			response.sendRedirect("index.jsp");
+			out.println("<script>");
+			out.println("alert('로그인에 성공 하였습니다.')");
+			out.print("location.href = 'index.jsp';");
+			out.println("</script>");
 		}else {
-			//실패
-			response.setContentType("text/html;charset=UTF-8");
-			PrintWriter out = response.getWriter();
 			out.println("<script>");
 			out.println("alert('로그인에 실패 하였습니다.')");
 			out.print("location.href = 'main1.jsp';");

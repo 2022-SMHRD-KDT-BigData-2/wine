@@ -6,49 +6,44 @@
 		<title>Forty by HTML5 UP</title>
 		<meta charset="EUC-KR" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="js/jquery-3.6.0.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 		<style>
-			.go {
-       			 height: 100vh;
-     		  	 background-image: url('images/banner.jpg');
-      			background-repeat : no-repeat;
+			body {
+				height : 100vh;
+       			background-image: url('images/back.png');
+      			 background-repeat : no-repeat;
       			background-size : cover;
 				 opacity: 0.5;
      		 }
-			
-			img{
-				position : absolute;
-				top : 20%;
-				left : 10%;
-				width: 30%;
-				height : 60%;
-			}
-			
+	
+
 
 		table{
-		border: 5px solid black;
-		width: 40%;
+			border: 10px solid black;
+			width: 40%;
 			border-collapse: collapse;
 			font-size : 240%;
 			font-weight : bold;
 			position : absolute;
-				top : 37%;
-				left : 45%;
-
-		}
+			top : 37%;
+			left : 30%;
+			border-color: white;
+			}
 	
 	th, tr,td { 
-		border: 1px solid black; 
+		border: 5px solid black; 
 		padding: 10px;
 		text-align : center;
 		font-size : 80%;
 		font-weight : bold;
+		color : white;
+		border-color: white;
 	}
 		
 	th{
-			color: #fff;
-		 background: #ce4869;
+			color: white;
+		 background: black;
 	}
 
 	a{
@@ -68,16 +63,16 @@
         padding: 10px 10px;
         font-size: 20px;
         box-shadow:inset 0px 1px 3px 0px #91b8b3;
-		background:linear-gradient(to left, #ce4869, #ce4444 );
+		background:linear-gradient(to left, black,black );
       	
       }
       
       #join{
-        width: 20%;
-        padding: 12px 14px 17px 14px;
+        width: 30%;
+        padding: 10px 10px 10px 10px;
         font-size: 20px;
 		box-shadow:inset 0px 1px 3px 0px #91b8b3;
-		background:linear-gradient(to left, #ce4869, #ce4444 );
+		background:linear-gradient(to left, black,black );
 		background-color: black;
       	cursor:pointer;
       }
@@ -89,44 +84,33 @@
 	}
 	
 	#wine0{
-		font: inherit;
-		font-size : 550%;
+		font: nanumgodic;
+		font-size : 600%;
 		color : white;
 		text-align : center;
 		font-weight : bolder;
+		font-family: 'Nanum Pen Script', cursive;
 	}
 	
+	#back{
+	position : absolute;
+	top : 75%;
+	left : 35%;
+	width: 100%;
+	}
+	
+	
+ 
 			 
 		</style>
 	</head>
 	<body>
-		<div id="page-wrapper">
 
-			<!-- Header -->
-					
-				<section id="header">
-
-					<div class="container">
-						
-							
-															
-								<!-- Logo -->
-									<br>
-									<br>
-									<p id="wine0">WINE학개론</p>
-
-		
-							
-						
-					</div>
-					</section>
-		</div>
-		
+					<br>
+					<p id="wine0">W I N E 학 개 론</p>
+					<br>
+			
 		<div class="go">
-			<img src="images/wine_main1_1.jpg.png">
-	
-
-
 
 		<form action="LoginService" method="post">
 			<table id="go2">
@@ -146,8 +130,15 @@
 			</tr>
 			</table>
 		</form>	
-
 		</div>
+		
+		<div id="back">
+			<img src="images/bg1.png">
+		
+		</div>
+	
+	
+	
 	</body>
 </html>
 

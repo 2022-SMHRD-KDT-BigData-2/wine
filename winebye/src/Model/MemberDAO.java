@@ -24,8 +24,7 @@ public class MemberDAO {
 		}
 		catch(Exception e){ 
 			e.printStackTrace();
-		}
-		
+		}	
 	}
 
 	//=================================================================================
@@ -48,7 +47,6 @@ public class MemberDAO {
 		//¼¼¼Ç ´Ý±â
 		session.close();
 		return cnt;
-		
 	}
 	//==join==
 	
@@ -62,7 +60,6 @@ public class MemberDAO {
 		session.close();
 		
 		return uvo;
-		
 	}
 	//==login==
 		
@@ -76,8 +73,17 @@ public class MemberDAO {
 		session.close();
 		
 		return vo;
+	}
+	
+	public int update(MemberVO vo) {
 		
 		
+		SqlSession session = sqlSessionFactory.openSession(true);
+		
+		int cnt = session.update("updateService", vo);
+		session.close();
+		
+		return cnt;
 	}
 	
 	//==id check

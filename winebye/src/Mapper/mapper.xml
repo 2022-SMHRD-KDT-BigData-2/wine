@@ -47,7 +47,9 @@
 		select * from member
 		where id = #{id}
 	</select>
-	
+	<update id = "updateService" parameterType="Model.MemberVO" >
+		update member set pw =#{pw}, birth=#{birth}, gender= #{gender},email= #{email},favorite= #{favorite} where id = #{id}
+	</update>
 	
 	
 </mapper>

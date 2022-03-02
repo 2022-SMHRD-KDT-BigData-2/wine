@@ -22,20 +22,17 @@ Probably better than from your own server. -->
 <!-- Load the Cloud Zoom JavaScript file -->
 <script type="text/JavaScript" src="assets/js/cloud-zoom.1.0.2.min.js"></script>
 <style>
+#winemap {
+	background-color: white;
+	padding: 1% 1% 1% 5%;
+}
 
-	
-	#winemap{
-		background-color : white;
-   		 padding: 1% 1% 1% 5%;
-	}
-	
-	#winemap_s, #winemap_s1{
-		background-color : gray;
-		text-align : center;
-   		font-size : 100%;
-   		color : white;
-	}
-
+#winemap_s, #winemap_s1 {
+	background-color: gray;
+	text-align: center;
+	font-size: 100%;
+	color: white;
+}
 </style>
 
 </head>
@@ -48,20 +45,24 @@ Probably better than from your own server. -->
 				<div class="row">
 					<div class="col-12">
 
-								<!-- login -->
-									<h2 style="text-align:right;"><a href="Logout" id="loginout" style="color:white;">로그아웃</a>
-									&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage" style="color:white;">마이페이지</a></h2>
-					
-									
-								<!-- Logo -->
-									<h1><a href="index.jsp" id="logo">Wine</a></h1>
+						<!-- login -->
+						<h2 style="text-align: right;">
+							<a href="Logout" id="loginout" style="color: white;">로그아웃</a>
+							&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage"
+								style="color: white;">마이페이지</a>
+						</h2>
 
-								<!-- Nav -->
-									<nav id="nav">
-										<a href="index.jsp">메인으로</a>
+
+						<!-- Logo -->
+						<h1>
+							<a href="index.jsp" id="logo">Wine</a>
+						</h1>
+
+						<!-- Nav -->
+							<nav id="nav">
+										
 										<a href="goRecommend">와인추천</a>
 										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="twocolumn3.html">판매처</a>
 										<a href="goBoardMain">홍보관</a>
 										<a href="twocolumn2.html">와이너리맵</a>
 									</nav>
@@ -71,76 +72,65 @@ Probably better than from your own server. -->
 				</div>
 			</div>
 		</section>
-		</div>
+	</div>
 
-		<!-- Content -->
-					
-						<!-- Main Content -->
-						<div id="winemap">
-							<a href='images/wineMap.jpg' class='cloud-zoom' id='zoom1'
-								rel="adjustX: 10, adjustY:-4"> 
-								<img style="width:45%;"
-								src="images/wineMap.jpg" alt=''
-								title="Optional title display" />
-							</a>
-						</div>
+	<!-- Content -->
+
+	<!-- Main Content -->
+	<div id="winemap">
+		<a href='images/wineMap.jpg' class='cloud-zoom' id='zoom1'
+			rel="adjustX: 10, adjustY:-4"> <img style="width: 45%;"
+			src="images/wineMap.jpg" alt='' title="Optional title display" />
+		</a>
+	</div>
 
 
-		<!-- Footer -->
+	<!-- Footer -->
 	<div id="page-wrapper">
 		<section id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-8 col-12-medium">
+			<div class="container">
+				<div class="row">
+					<div class="col-8 col-12-medium">
 
-								<!-- Links -->
-									<section>
-										<h2>와인 판매처</h2>
-										<div>
-											<div class="row">
-												<div class="col-3 col-12-small">
-													<ul class="link-list last-child">
-														<li><a href="twocolumn3.html">여포와인농장</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
-													</ul>
-												</div>
-												<div class="col-3 col-12-small">
-													<ul class="link-list last-child">
-														<li><a href="#">Neque amet dapibus</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
-													</ul>
-												</div>
-												<div class="col-3 col-12-small">
-													<ul class="link-list last-child">
-														<li><a href="#">Neque amet dapibus</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
-													</ul>
-												</div>
-												<div class="col-3 col-12-small">
-													<ul class="link-list last-child">
-														<li><a href="#">Neque amet dapibus</a></li>
-														<li><a href="#">Sed mattis quis rutrum</a></li>
-														<li><a href="#">Accumsan suspendisse</a></li>
-														<li><a href="#">Eu varius vitae magna</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</section>
-
+						<!-- Links -->
+						<section>
+							<h2>와인 판매처</h2>
+							<div>
+								<div class="row">
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											<li><a href="twocolumn3.html">여포와인 농장</a></li>
+											<li><a href="twocolumn4.html">컨츄리 농원</a></li>
+											
+										</ul>
+									</div>
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											<li><a href="twocolumn5.html">고도리 와이너리</a></li>
+											<li><a href="twocolumn6.html">샤토미소 도란원</a></li>
+											
+										</ul>
+									</div>
+									<div class="col-3 col-12-small">
+										<ul class="link-list last-child">
+											
+											<li><a href="twocolumn7.html">산막 와이너리</a></li>
+											<li><a href="twocolumn8.html">그랑꼬도 와이너리</a></li>
+											
+										</ul>
+									</div>
+									
+								</div>
 							</div>
+						</section>
 
-						</div>
 					</div>
-				</section>
-		</div>
-		
+
+				</div>
+			</div>
+		</section>
+	</div>
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>

@@ -1,6 +1,8 @@
 package Controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,7 +40,8 @@ public class JoinService extends HttpServlet {
 		int cnt = dao.join(vo);
 		//insert into msg_member values(?,?,?,?)
 		//insert -> psmt.executeUpdat(); --> int(몇행 변확 일어났는지)
-		
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out = response.getWriter();
 		
 		
 		//3. 성공여부를 판단해서
@@ -47,10 +50,16 @@ public class JoinService extends HttpServlet {
 		
 		if(cnt >0) {
 			//성공
-			response.sendRedirect("index.jsp");
+			out.println("<script>");
+			out.println("alert('회원가입에 성공 하였습니다.')");
+			out.print("location.href = 'index.jsp';");
+			out.println("</script>");
 		}else {
 			//실패
-			response.sendRedirect("main1.jsp");
+			out.println("<script>");
+			out.println("alert('회원가입에 실패 하였습니다.')");
+			out.print("location.href = 'main1.jsp';");
+			out.println("</script>");
 		}
 		
 		

@@ -7,43 +7,56 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<script src="js/jquery-3.6.0.js"></script>
 	<style>
 	
-	body {
-			background-color : gray;
-       			 height: 100vh;
-     		  	 background-image: url('images/wine_main1_1.jpg.png');
-      			background-repeat : no-repeat;
-        		background-size : 50%;
+			body {
+				height : 100vh;
+       			background-image: url('images/back.png');
+      			 background-repeat : no-repeat;
+      			background-size : cover;
 				 opacity: 0.5;
      		 }
+	
+		#wine0{
+		font: nanumgodic;
+		font-size : 600%;
+		color : white;
+		text-align : center;
+		font-weight : bolder;
+		font-family: 'Nanum Pen Script', cursive;
+	}
      		 
      		 
 		table{
-		border: 5px solid black;
-		width: 30%;
+	border: 10px solid black;
+			width: 40%;
 			border-collapse: collapse;
-			font-size : 300%;
+			font-size : 240%;
 			font-weight : bold;
-			
 			position : absolute;
-				top : 20%;
-				left : 50%;
+			top : 25%;
+			left : 30%;
+			border-color: white;
 
 		}
 	
 	th, tr,td { 
-		border: 1px solid black; 
+	border: 5px solid black; 
 		padding: 10px;
 		text-align : center;
 		font-size : 80%;
 		font-weight : bold;
-		cursor:pointer;
+		color : white;
+		border-color: white;
 	}
 		
 	th{
-			color: #fff;
-		 background: #ce4869;
+			color: white;
+		 background: black;
+	}
 	}
 	
 	table td:nth-child(1) {
@@ -70,7 +83,7 @@
         padding: 10px 10px;
         font-size: 20px;
         box-shadow:inset 0px 1px 3px 0px #91b8b3;
-		background:linear-gradient(to left, #ce4869, #ce4444 );
+		background:linear-gradient(to left, black, black );
 		background-color:gray;
       	
       }
@@ -81,7 +94,7 @@
         padding: 10px 10px 10px 10px;
         font-size: 20px;
 		box-shadow:inset 0px 1px 3px 0px #91b8b3;
-		background:linear-gradient(to left, #ce4869, #ce4444 );
+		background:linear-gradient(to left, black, black );
 		background-color:gray;
       	cursor:pointer;
       }
@@ -90,11 +103,28 @@
       	width : 10%;
       }
       
+      	#back{
+	position : absolute;
+	top : 100%;
+	left : 35%;
+	width: 100%;
+	}
+	
+      
 	
 	</style>
 	<script src="js/jquery-3.6.0.js"></script>
 </head>
 <body>
+
+
+
+									<p id="wine0">W I N E 학 개 론</p>
+
+		
+							
+	
+
 		<script type="text/javascript">
 				function idCheck(){
 				 
@@ -180,6 +210,10 @@
 			</table>
 		</form>	
 		
+			<div id="back">
+			<img src="images/bg1.png">
+		
+		</div>
 
 	
 
