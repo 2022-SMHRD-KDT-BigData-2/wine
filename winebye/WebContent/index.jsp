@@ -6,73 +6,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-
 <html>
 	<head>
 		<title>Halcyonic by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		
-		<style>
-		/* Dropdown Button */
-.dropbtn {
-   background: url("images/bg02.jpg");
-    color: #c6c8c8;
-    padding: 16px;
-    font-size: 1.4em;
-    border: none;
-    cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background: url("images/bg02.jpg");
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown{
-    position: relative;
-    display: inline-block;
-    border : 1px;
-}
-
-.dropdown2{
-    position: relative;
-    display: inline-block;
-    border : 1px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: #c6c8c8;
-    padding: 12px 16px;
-    font-size: 1.0em;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: white}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-		
-		#ah1,#ah2,#ah3,#ah4,#ah5,#ah6{
-		font-size: 1em !important;
-		margin : 0 !important;
-		border-color : black !important;
-		border : 1px solid !important;
-		}	
-		</style>
 	</head>
 	<body>
 	
@@ -91,45 +30,21 @@
 					
 									
 								<!-- Logo -->
-									<h1><a href="index.jsp" id="logo">Wine</a></h1>
+									<h1><a href="index.jsp" id="logo">Korea Wine</a></h1>
 
 								<!-- Nav -->
 									<nav id="nav">
-										
+										a
 										<a href="goRecommend">와인추천</a>
+										<a href="twocolumn1.html">와인백과사전</a>
+										<a href="goBoardMain">게시판</a>
 										
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-										
-										<div class="dropdown">
-								<button onclick="myFunction()" class="dropbtn">와인백과사전</button>
-								<div id="myDropdown" class="dropdown-content">
-									<a id="ah1" href="twocolumn1.html">▶와인용어</a> 
-									<a id="ah2" href="twocolumn1_1.html">▶와인즐기기</a> 
-									<a id="ah3" href="twocolumn1_2.html">▶한국와인 차이점</a> 
-									<a id="ah4" href="twocolumn1_3.html">▶와인잔</a> 
-
-								</div>
-							</div>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	
-							<div class="dropdown2">
-								<button onclick="myFunction2()" class="dropbtn">게시판</button>
-								<div id="myDropdown2" class="dropdown-content">
-									<a id="ah5" href="goBoardMain">▶자유게시판</a> 
-									<a id="ah6"href="#">▶홍보 게시판</a>
-								</div>
-							</div>
-
-
-
-							<a href="twocolumn2.html">와이너리맵</a>
+										<a href="twocolumn2.html">와이너리맵</a>
 									</nav>
 
 							</div>
 						</div>
 					</div>
-					
-					
 					
 					<div id="banner">
 						<div class="container">
@@ -137,15 +52,15 @@
 								<div class="col-6 col-12-medium">
 
 									<!-- Banner Copy -->
-										<p>와인이 국민 술 시장 넘본다</p>
-										<span>출처)시시저널 1688호</span><br>
-										<a href="#" class="button-large">Go on, click me!</a>
+										<p>달콤한 맛만 있다?<br> 한국 와인 한번 마셔보시죠</p>
+										<span>출처)ohmynews</span><br>
+										<a href="http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002811917&SRS_CD=0000013493" class="button-large">Go on, click me!</a>
 
 								</div>
 								<div class="col-6 col-12-medium imp-medium">
 
 									<!-- Banner Image -->
-										<a href="http://www.sisajournal.com/news/articleView.html?idxno=233447" class="bordered-feature-image"><img src="images/wine1.jpg" alt="" /></a>
+										<a href="http://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0002811917&SRS_CD=0000013493" class="bordered-feature-image"><img src="assets/css/images/wine1.jpg" alt="" /></a>
 
 								</div>
 							</div>
@@ -166,10 +81,10 @@
 
 								<!-- Feature #1 -->
 									<section>
-										<a href="https://www.youtube.com/watch?v=CXw8biVZNfM" class="bordered-feature-image"><img src="images/wine2.jpg" alt="" /></a>
-										<h2>사인머스캣으로 화이트와인 만들기</h2>
+										<a href="https://www.youtube.com/watch?v=jad0wB3P2IM" class="bordered-feature-image"><img src="assets/css/images/wine2.jpg" alt="" /></a>
+										<h2>우리나라는 언제부터 와인을 마셨을까?</h2>
 										<p>
-											이 영상 출처는 <strong>Mute8 뮤트에잇</strong> 채널입니다.
+											이 영상 출처는 <strong>1879tv</strong> 채널입니다.
 		
 										</p>
 									</section>
@@ -179,10 +94,10 @@
 
 								<!-- Feature #2 -->
 									<section>
-										<a href="https://www.youtube.com/watch?v=QJhWHE7wbj8" class="bordered-feature-image"><img src="images/wine3.jpg" alt="" /></a>
-										<h2>와인 매너 BEST7</h2>
+										<a href="https://www.youtube.com/c/%EC%99%80%EC%9D%B8%EB%94%94%EB%A0%89%ED%84%B0%EC%96%91%EA%B0%B1" class="bordered-feature-image"><img src="assets/css/images/wine3.jpg" alt="" /></a>
+										<h2>한국와인은 어떤맛이 나나요?</h2>
 										<p>
-											이 영상 출처는 <strong>와푸밸</strong> 채널입니다.
+											이 영상 출처는 <strong>와인디렉터 양갱 Wine tv</strong> 채널입니다.
 										</p>
 									</section>
 
@@ -191,10 +106,10 @@
 
 								<!-- Feature #3 -->
 									<section>
-										<a href="https://www.youtube.com/watch?v=P_SdlWPPAqI" class="bordered-feature-image"><img src="images/wine4.jpg" alt="" /></a>
-										<h2>와인 코르크가 부서졌을때</h2>
+										<a href="https://www.youtube.com/watch?v=dtzJBCXCH9Y" class="bordered-feature-image"><img src="assets/css/images/wine4.jpg" alt="" /></a>
+										<h2>식객허영만도 반한맛?이것이 한국 사과와인이다</h2>
 										<p>
-											이 영상 출처는 <strong>루뱅</strong> 채널입니다.
+											이 영상 출처는 <strong>노블레스 티비</strong> 채널입니다.
 										</p>
 									</section>
 
@@ -203,10 +118,10 @@
 
 								<!-- Feature #4 -->
 									<section>
-										<a href="https://www.youtube.com/watch?v=uqPCsW9I14k" class="bordered-feature-image"><img src="images/wine4.jpg" alt="" /></a>
-										<h2>와인 역사</h2>
+										<a href="https://www.youtube.com/watch?v=urYO_YZQFHo" class="bordered-feature-image"><img src="assets/css/images/wine5.jpg" alt="" /></a>
+										<h2>한국와인발전을 위한 와인데이 선포</h2>
 										<p>
-											이 영상 출처는 <strong>봉아재의 샘플교양</strong> 채널입니다.
+											이 영상 출처는 <strong>YTN news</strong> 채널입니다.
 										</p>
 									</section>
 
@@ -393,47 +308,6 @@
 
 		</div>
 
-		<script>
-		
-		function myFunction() {
-		    document.getElementById("myDropdown").classList.toggle("show");
-		}
-
-		// Close the dropdown menu if the user clicks outside of it
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-
-		    var dropdowns = document.getElementsByClassName("dropdown-content");
-		    var i;
-		    for (i = 0; i < dropdowns.length; i++) {
-		      var openDropdown = dropdowns[i];
-		      if (openDropdown.classList.contains('show')) {
-		        openDropdown.classList.remove('show');
-		      }
-		    }
-		  }
-		}
-		
-		function myFunction2() {
-		    document.getElementById("myDropdown2").classList.toggle("show");
-		}
-
-		// Close the dropdown menu if the user clicks outside of it
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-
-		    var dropdowns = document.getElementsByClassName("dropdown-content");
-		    var i;
-		    for (i = 0; i < dropdowns.length; i++) {
-		      var openDropdown = dropdowns[i];
-		      if (openDropdown.classList.contains('show')) {
-		        openDropdown.classList.remove('show');
-		      }
-		    }
-		  }
-		}
-		
-		</script>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
