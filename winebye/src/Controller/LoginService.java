@@ -18,6 +18,8 @@ public class LoginService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		//0. 인코딩
+				request.setCharacterEncoding("euc-kr");
 		//1.파라미터 수집
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");

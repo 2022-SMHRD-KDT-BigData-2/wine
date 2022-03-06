@@ -9,13 +9,26 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+<style>
+.sy{
+	border: 1px solid black;
+}
+#f1{
+	font-family: 'JeonHwaseon';
+	font-size: 160%;
+}
+ 
+</style>
+
 	<head>
 		<title>One Column - Halcyonic by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="subpage">
+	
+	
+	<body class="subpage" id="f1">
 	
 	<%
 			List<BoardVO> list = (List<BoardVO>)request.getAttribute("list");
@@ -26,29 +39,31 @@
 			<!-- Header -->
 				<section id="header">
 					<div class="container">
-						<div class="row">
-							<div class="col-12">
+				<div class="row">
+					<div class="col-12">
+						<!-- login -->
+						<h2 style="text-align: right;">
+							<a href="Logout" id="loginout" style="color: #272e31;">로그아웃</a>
+							&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage"
+								style="color: #272e31;">마이페이지</a>
+						</h2>
 
-								<!-- login -->
-									<h2 style="text-align:right;"><a href="Logout" id="loginout" style="color:white;">로그아웃</a>
-									&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage" style="color:white;">마이페이지</a></h2>
-					
-									
-								<!-- Logo -->
-									<h1><a href="index.jsp" id="logo">Wine</a></h1>
 
-								<!-- Nav -->
-										<nav id="nav">
-										
-										<a href="goRecommend">와인추천</a>
-										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="goBoardMain">게시판</a>
-										<a href="twocolumn2.html">와이너리맵</a>
-									</nav>
+						<!-- Logo -->
+						<h1>
+							<a style="font-size:120%"; href="index.jsp" id="logo">Korea Wine</a>
+						</h1>
 
-							</div>
-						</div>
+						<!-- Nav -->
+						<nav id="nav">
+
+							<a href="goRecommend">와인추천</a> <a href="twocolumn1.html">와인백과사전</a>
+							<a href="goBoardMain">게시판</a> <a href="twocolumn2.html">와이너리맵</a>
+						</nav>
+
 					</div>
+				</div>
+			</div>
 				</section>
 
 
@@ -56,19 +71,19 @@
 				<section id="content">
 				<div id="board">
 				<table id ="list" style="padding:40px;text-align : center;">
-					<tr style = " background-color :  #474f51;">
+					<tr style = " background-color :  #474f51;" class="sy">
 						<td style = "color : white;">번호</td>
 						<td style = "color : white;">제목</td>
 						<td style = "color : white;">작성자</td>
 						<td style = "color : white;">시간</td>
 					</tr>
 					<%for(BoardVO vo : list){%>
-					<tr style="background-color : white;">
-						<td ><%=vo.getNum() %></td>
+					<tr style="background-color : white;" class="sy">
+						<td style="border: 1px solid black;"><%=vo.getNum() %></td>
 						<%-- 쿼리스트링: url?name=value --%>
-						<td><a style="text-decoration-line : none;" href="goViewBoard?num=<%=vo.getNum()%>"> <span style="color:#96a9b5"><%=vo.getChoose()%>&nbsp;</span>  <%=vo.getTitle() %></a></td>
-						<td><%=vo.getWriter() %></td>
-						<td><%=vo.getDay() %></td>
+						<td style="border: 1px solid black;"><a style="text-decoration-line : none;" href="goViewBoard?num=<%=vo.getNum()%>"> <span style="color:#96a9b5"><%=vo.getChoose()%>&nbsp;</span>  <%=vo.getTitle() %></a></td>
+						<td style="border: 1px solid black;"><%=vo.getWriter() %></td>
+						<td style="border: 1px solid black;"><%=vo.getDay() %></td>
 					</tr>
 					<%} %>
 					

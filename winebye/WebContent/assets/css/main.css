@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200");
 
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 /*
 	Halcyonic by HTML5 UP
 	html5up.net | @ajlkn
@@ -21,7 +21,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -44,6 +44,24 @@ blockquote, q {
 		content: '';
 		content: none;
 	}
+
+@font-face 
+{ 
+	font-family: 'JeonHwaseon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/JeonHwaseon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}	
+
+
+/*Video */
+video{
+
+      width: 100%; 
+      position: relative; 
+      object-fit: fill;
+   
+}
 
 /* Table */
 
@@ -147,10 +165,10 @@ input, select, textarea {
 	}
 
 	body {
-		background: #D4D9DD url("images/bg03.jpg");
+		background: #fff;
 		color: #474f51;
 		font-size: 13.5pt;
-		font-family: 'Yanone Kaffeesatz';
+		
 		line-height: 1.85em;
 		font-weight: 300;
 	}
@@ -158,7 +176,7 @@ input, select, textarea {
 	input, textarea, select {
 		color: #474f51;
 		font-size: 13.5pt;
-		font-family: 'Yanone Kaffeesatz';
+		
 		line-height: 1.85em;
 		font-weight: 300;
 	}
@@ -168,7 +186,7 @@ input, select, textarea {
 	}
 
 	a {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
@@ -1576,8 +1594,8 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background: #3B4346 url("images/bg01.jpg");
-		border-bottom: solid 1px #272d30;
+		background-color:#dfd6cf;
+		border-bottom: solid 1px #f3c2bd;
 		box-shadow: inset 0px -1px 0px 0px #51575a;
 		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
 	}
@@ -1595,8 +1613,9 @@ input, select, textarea {
 		}
 
 			#header h1 a {
-				color: #fff;
+				color: #272e31;
 				text-decoration: none;
+				font-size: -webkit-xxx-large;
 			}
 
 		#header nav {
@@ -1607,7 +1626,7 @@ input, select, textarea {
 		}
 
 			#header nav a {
-				color: #c6c8c8;
+				color: #272e31;
 				text-decoration: none;
 				font-size: 1.4em;
 				margin-left: 60px;
@@ -1620,15 +1639,20 @@ input, select, textarea {
 
 		.subpage #header > .container {
 			height: 155px;
+			
 		}
 
 /* Banner */
 
 	#banner {
-		border-top: solid 1px #222628;
-		box-shadow: inset 0px 1px 0px 0px #3e484a;
+		background-color: #fff;
+		border-top: solid 1px #272e31;
+		box-shadow: inset 0px 1px 0px 0px #f3c2bd;
 		padding: 35px 0 35px 0;
 		color: #fff;
+		
+		
+	
 	}
 
 		#banner .bordered-feature-image {
@@ -1646,7 +1670,7 @@ input, select, textarea {
 /* Features */
 
 	#features {
-		background: #353D40 url("images/bg02.jpg");
+		background-color: #fff;
 		border-bottom: solid 1px #272e31;
 		padding: 45px 0 45px 0;
 		text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.75);
@@ -1670,27 +1694,32 @@ input, select, textarea {
 /* Content */
 
 	#content {
-		background: #f7f7f7 url("images/bg04.png");
-		border-top: solid 1px #fff;
+
+		background: #fff;
+		border-top: solid 1px #272e31;
 		padding: 45px 0 45px 0;
 	}
 
 		#content section {
-			background: #fff;
-			padding: 40px 30px 45px 30px;
+			
+			height: 100%;
+			background: #fff;;
+			padding: 10% 15% 10% 15%;
 			box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.1);
 			margin: 0 0 25px 0;
 		}
 
 		#content h2 {
 			font-size: 1.8em;
-			color: #373f42;
+			color: #272e31;
 			margin: 0 0 0.25em 0;
+			
 		}
 
 		#content h3 {
-			color: #96a9b5;
+			color: #272e31;
 			font-size: 1.25em;
+			
 		}
 
 		#content a {
@@ -1706,7 +1735,7 @@ input, select, textarea {
 		}
 
 		#content .link-list li {
-			border-bottom: solid 1px #e2e6e8;
+			border-bottom: solid 1px black;
 		}
 
 		#content .check-list li {
@@ -1716,10 +1745,14 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 45px 0 45px 0;
+		
+		text-align: center;
+	    border-top: solid 1px #272e31;
+		
 		text-shadow: 1px 1px 1px white;
-		color: #546b76;
+		color: #272e31;
 		text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
+		padding: 3% 0% 3% 10%;
 	}
 
 		#footer h2 {
@@ -1784,7 +1817,7 @@ input, select, textarea {
 				.quote-list li p {
 					margin: 0 0 0 80px;
 					font-size: 1em;
-					font-style: italic;
+					
 					line-height: 1.8em;
 				}
 
@@ -1813,10 +1846,12 @@ input, select, textarea {
 		/* Header */
 
 			#header h1 {
+			
 				font-size: 2.25em;
 			}
 
 			#header nav a {
+				color:#272e31;
 				font-size: 1.1em;
 			}
 
@@ -1971,7 +2006,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: url("images/bg04.jpg");
+				background: url("images/wineMapBig2.jpg");
 				box-shadow: inset -1px 0px 0px 0px rgba(255, 255, 255, 0.25), inset -2px 0px 25px 0px rgba(0, 0, 0, 0.5);
 				text-shadow: -1px -1px 1px black;
 			}

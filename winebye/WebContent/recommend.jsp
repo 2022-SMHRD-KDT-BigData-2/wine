@@ -15,8 +15,20 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
+
+<style>
+.sy{
+	border: 1px solid black;
+}
+#f1{
+	font-family: 'JeonHwaseon';
+	font-size: 160%;
+}
+ 
+</style>
+
 </head>
-<body class="subpage">
+<body class="subpage" id="f1">
 
 
 	<%
@@ -29,23 +41,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
+						<!-- login -->
+						<h2 style="text-align: right;">
+							<a href="Logout" id="loginout" style="color: #272e31;">로그아웃</a>
+							&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage"
+								style="color: #272e31;">마이페이지</a>
+						</h2>
 
-								<!-- login -->
-									<h2 style="text-align:right;"><a href="Logout" id="loginout" style="color:white;">로그아웃</a>
-									&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage" style="color:white;">마이페이지</a></h2>
-					
-									
-								<!-- Logo -->
-									<h1><a href="index.jsp" id="logo">Wine</a></h1>
 
-								<!-- Nav -->
-										<nav id="nav">
-										
-										<a href="goRecommend">와인추천</a>
-										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="goBoardMain">게시판</a>
-										<a href="twocolumn2.html">와이너리맵</a>
-									</nav>
+						<!-- Logo -->
+						<h1>
+							<a style="font-size:120%"; href="index.jsp" id="logo">Korea Wine</a>
+						</h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+
+							<a href="goRecommend">와인추천</a> <a href="twocolumn1.html">와인백과사전</a>
+							<a href="goBoardMain">게시판</a> <a href="twocolumn2.html">와이너리맵</a>
+						</nav>
 
 					</div>
 				</div>
@@ -64,7 +78,7 @@
 						<!-- Box #1 -->
  
 						
-							<section>
+							<section class="sy">
 								
 								<a href="goInfo?info_name=<%=vo.getInfo_name() %>"  class="feature-image"><img src="<%=vo.getInfo_img() %>"
 									style="max-width: 100%; height: auto; " alt="" /></a>

@@ -8,6 +8,20 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+<style>
+.sy{
+	border: 1px solid black;
+	}
+	#f1{
+	font-family: 'JeonHwaseon';
+	font-size: 160%;
+	}
+	.bb{
+	color: white;
+	background-color: #474f51;
+	}
+
+</style>
 <head>
 <title>One Column - Halcyonic by HTML5 UP</title>
 <meta charset="utf-8" />
@@ -15,7 +29,9 @@
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body class="subpage">
+
+
+<body class="subpage" id="f1">
 
 
 	<%
@@ -29,28 +45,30 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
+						<!-- login -->
+						<h2 style="text-align: right;">
+							<a href="Logout" id="loginout" style="color: #272e31;">로그아웃</a>
+							&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage"
+								style="color: #272e31;">마이페이지</a>
+						</h2>
 
-								<!-- login -->
-									<h2 style="text-align:right;"><a href="Logout" id="loginout" style="color:white;">로그아웃</a>
-									&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage" style="color:white;">마이페이지</a></h2>
-					
-									
-								<!-- Logo -->
-									<h1><a href="index.jsp" id="logo">Wine</a></h1>
 
-								<!-- Nav -->
-									<nav id="nav">
-										
-										<a href="goRecommend">와인추천</a>
-										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="goBoardMain">게시판</a>
-										<a href="twocolumn2.html">와이너리맵</a>
-									</nav>
+						<!-- Logo -->
+						<h1>
+							<a style="font-size:120%"; href="index.jsp" id="logo">Korea Wine</a>
+						</h1>
 
+						<!-- Nav -->
+						<nav id="nav">
+
+							<a href="goRecommend">와인추천</a> <a href="twocolumn1.html">와인백과사전</a>
+							<a href="goBoardMain">게시판</a> <a href="twocolumn2.html">와이너리맵</a>
+						</nav>
 
 					</div>
 				</div>
 			</div>
+
 		</section>
 
 
@@ -59,10 +77,10 @@
 		<section id="content">
 			<div id="board">
 				<form action="writeService" method="post">
-					<table style= "width:100%;  border: 1px solid #444444; background-color:#474f51; padding:40px;" id="list">
+					<table style= "width:100%; padding:40px;" id="list">
 						<tr style= "background-color:white">
-							<td>와인</td>
-							<td><select name="choose" size="1">
+							<td class="bb">와인</td>
+							<td style="border: 1px solid black;"><select name="choose" size="1">
 									<option value="컨츄리캠벨(스위트)">컨츄리캠벨(스위트)</option>
 									<option value="화이트 스위트750">화이트 스위트750</option>
 									<option value="그랑꼬또 레드스위트 M5610">그랑꼬또 레드스위트 M5610</option>
@@ -78,17 +96,17 @@
 							</td>
 						</tr>
 						<tr style= "background-color:white">
-							<td >제목</td>
-							<td><input style= "width:100%;" type="text" name="title"></td>
+							<td class="bb">제목</td>
+							<td style="border: 1px solid black;"><input style= "width:100%;" type="text" name="title"></td>
 						</tr>
 						
 						
-						<tr>
-							<td style="background-color:white" colspan="2">내용</td>
-						</tr>
-						<tr>
-							<td style="background-color:white" colspan="2">
-							 <textarea style= "width:100%;" name="content" rows="10" style="resize: none;"></textarea>
+						<tr >
+							<td class="bb" style="height:500px;">내용</td>
+							
+						
+							<td style="border: 1px solid black; background-color:white; " colspan="2">
+							 <input style= "width:100%; height:500px;" type="text" name="title">
 							 </td>
 						</tr>
 						<tr>

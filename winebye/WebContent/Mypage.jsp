@@ -10,83 +10,78 @@
 <title>Insert title here</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-<script src="js/jquery-3.6.0.js"></script>
-	<style>
-	
-			body {
-				height : 100vh;
-       			background-image: url('images/back.png');
-      			 background-repeat : no-repeat;
-      			background-size : cover;
-				 opacity: 0.5;
-     		 }
-	
-		#wine0{
-		font: nanumgodic;
-		font-size : 600%;
-		color : white;
-		text-align : center;
-		font-weight : bolder;
-		font-family: 'Nanum Pen Script', cursive;
-	}
-     		 
-     		 
-		table{
-	border: 10px solid black;
-			width: 40%;
-			border-collapse: collapse;
-			font-size : 240%;
-			font-weight : bold;
-			position : absolute;
-			top : 25%;
-			left : 30%;
-			border-color: white;
 
-		}
-	
-	th, tr,td { 
-	border: 5px solid black; 
-		padding: 10px;
-		text-align : center;
-		font-size : 80%;
-		font-weight : bold;
-		color : white;
-		border-color: white;
-	}
-		
-	th{
-			color: white;
-		 background: black;
-	}
-	}
-	
-	table td:nth-child(1) {
+<script src="js/jquery-3.6.0.js"></script>
+   <style>
+   
+       
+   
+      #wine0{
+      font: nanumgodic;
+      font-size : 600%;
+      color : #474f51;
+      text-align : center;
+      font-weight : bolder;
+      font-family: 'Nanum Pen Script', cursive;
+   }
+            
+            
+      table{
+   border: 10px solid black;
+         width: 40%;
+         border-collapse: collapse;
+         font-size : 240%;
+         font-weight : bold;
+         position : absolute;
+         top : 25%;
+         left : 30%;
+         border-color: white;
+
+      }
+   
+   th, tr,td { 
+   border: 5px solid black; 
+      padding: 10px;
+      text-align : center;
+      font-size : 80%;
+      font-weight : bold;
+      color : #474f51;
+      border-color: white;
+   }
+      
+   th{
+         color: white;
+       background: #474f51;
+   }
+   }
+   
+   table td:nth-child(1) {
     width: 20%;
   }
-	
-	
-	input::placeholder {
-  		color: red;
-  		font-style: italic;
-	}
-	
-	
-	
-	   input {
+   
+   
+   input::placeholder {
+        color: red;
+        font-style: italic;
+   }
+   
+   
+   
+      input {
         width: 70%;
         padding: 10px 10px;
         font-size: 20px;
       }
       
        input[type=submit]{
-     	 color : white;
-      	 width: 40%;
+         color : white;
+          width: 40%;
         padding: 10px 10px;
         font-size: 20px;
         box-shadow:inset 0px 1px 3px 0px #91b8b3;
-		background:linear-gradient(to left, black, black );
-		background-color:gray;
-      	
+      
+      background-color:#474f51;
+         
       }
       
         #join{
@@ -94,26 +89,32 @@
         width: 40%;
         padding: 10px 10px 10px 10px;
         font-size: 20px;
-		box-shadow:inset 0px 1px 3px 0px #91b8b3;
-		background:linear-gradient(to left, black, black );
-		background-color:gray;
-      	cursor:pointer;
+      box-shadow:inset 0px 1px 3px 0px #91b8b3;
+     
+      background-color:#474f51;
+         cursor:pointer;
       }
       
       #choicea, #choiceb, #choicec,#choiced, #choicee{
-      	width : 10%;
+         width : 10%;
       }
       
-      	#back{
-	position : absolute;
-	top : 92%;
-	left : 35%;
-	width: 100%;
-	}
+         #back{
+   position : absolute;
+   top : 100%;
+   left : 35%;
+   width: 100%;
+   }
+   body{
+   background-color:#dfd6cf;
+   }
+      
+   
+   </style>
 	
       
 	
-	</style>
+
 	<script src="js/jquery-3.6.0.js"></script>
 </head>
 <body>
@@ -122,7 +123,7 @@
 		MemberVO vo = (MemberVO)session.getAttribute("vo");
 	%>
 
-			<p id="wine0">W I N E ÇÐ °³ ·Ð</p>
+			<p id="wine0">Korea Wine</p>
 			
 
 			<form action="MypageService" method="post">
@@ -173,10 +174,7 @@
 			</table>
 		</form>	
 		
-			<div id="back">
-			<img src="images/bg1.png">
 		
-		</div>
 
 	
 

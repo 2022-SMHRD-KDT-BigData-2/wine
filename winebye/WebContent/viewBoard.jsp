@@ -14,18 +14,29 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			table {
+<style>
+	table {
 				width: 100%;
 				padding:20px;
-			}
-			td {
+		}
+	td {
 				padding: 20px;
 				border: 1px ;
-			}
-		</style>
+		}
+	.sy{
+	border: 1px solid black;
+	}
+	#f1{
+	font-family: 'JeonHwaseon';
+	font-size: 160%;
+	}
+	.bb{
+	color: white;
+	background-color: #474f51;
+	}
+</style>
 </head>
-<body class="subpage">
+<body class="subpage" id="f1">
 	<%
 		BoardVO bvo = (BoardVO) request.getAttribute("bvo");
 	%>
@@ -37,24 +48,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
+						<!-- login -->
+						<h2 style="text-align: right;">
+							<a href="Logout" id="loginout" style="color: #272e31;">로그아웃</a>
+							&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage"
+								style="color: #272e31;">마이페이지</a>
+						</h2>
 
-								<!-- login -->
-									<h2 style="text-align:right;"><a href="Logout" id="loginout" style="color:white;">로그아웃</a>
-									&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage" style="color:white;">마이페이지</a></h2>
-					
-									
-								<!-- Logo -->
-									<h1><a href="index.jsp" id="logo">Wine</a></h1>
 
-								<!-- Nav -->
-										<nav id="nav">
-										
-										<a href="goRecommend">와인추천</a>
-										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="goBoardMain">게시판</a>
-										<a href="twocolumn2.html">와이너리맵</a>
-									</nav>
+						<!-- Logo -->
+						<h1>
+							<a style="font-size:120%"; href="index.jsp" id="logo">Korea Wine</a>
+						</h1>
 
+						<!-- Nav -->
+						<nav id="nav">
+
+							<a href="goRecommend">와인추천</a> <a href="twocolumn1.html">와인백과사전</a>
+							<a href="goBoardMain">게시판</a> <a href="twocolumn2.html">와이너리맵</a>
+						</nav>
 
 					</div>
 				</div>
@@ -67,18 +79,18 @@
 		<section id="content">
 
 			<div id="board">
-				<table style= "width:100%;  border: 1px solid #444444; background-color:#474f51" id="list">
-					<tr style= "border: 1px solid #444444; ">
-						<td style="background-color:white; width: 10%; text-align : center;">제목</td>
-						<td style="background-color:white"><%=bvo.getTitle()%></td>
+				<table style= "width:100%; background-color:#fff" id="list" >
+					<tr style= "border: 1px solid #444444;">
+						<td class="bb" style=" width: 10%; text-align : center;">제목</td>
+						<td  style="background-color:white; border: 1px solid black;"><%=bvo.getTitle()%></td>
 					</tr>
 					<tr>
-						<td style="background-color:white; width: 10%;text-align : center;">작성자</td>
-						<td style="background-color:white"><%=bvo.getWriter()%></td>
+						<td class="bb" style=" width: 10%;text-align : center;">작성자</td>
+						<td  style="background-color:white; border: 1px solid black;"><%=bvo.getWriter()%></td>
 					</tr>
 					<tr>
-						<td style="background-color:white; height:400px; width: 10%; text-align : center;">내용 </td>
-						<td style="background-color:white; height:400px; "><%=bvo.getContent()%></td>
+						<td class="bb" style=" height:400px; width: 10%; text-align : center;">내용 </td>
+						<td  style="background-color:white; height:400px;  border: 1px solid black;"><%=bvo.getContent()%></td>
 					</tr>
 
 					<tr>

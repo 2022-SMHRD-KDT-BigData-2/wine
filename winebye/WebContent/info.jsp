@@ -16,13 +16,22 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 <script src="js/jquery-3.6.0.js"></script>
 </head>
-
+<style>
+.sy{
+	border: 1px solid black;
+}
+#f1{
+	font-family: 'JeonHwaseon';
+	font-size: 160%;
+}
+ 
+</style>
 <%
 	WineVO vo = (WineVO)request.getAttribute("uvo");
 	SellVO svo = (SellVO)request.getAttribute("svo");
 
 %>
-<body class="subpage">
+<body class="subpage" id="f1">
 	<div id="page-wrapper">
 
 		<!-- Header -->
@@ -30,23 +39,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
+						<!-- login -->
+						<h2 style="text-align: right;">
+							<a href="Logout" id="loginout" style="color: #272e31;">로그아웃</a>
+							&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage"
+								style="color: #272e31;">마이페이지</a>
+						</h2>
 
-							<!-- login -->
-									<h2 style="text-align:right;"><a href="Logout" id="loginout" style="color:white;">로그아웃</a>
-									&nbsp;&nbsp;&nbsp;<a href="Mypage.jsp" id="Mypage" style="color:white;">마이페이지</a></h2>
-					
-									
-								<!-- Logo -->
-									<h1><a href="index.jsp" id="logo">Wine</a></h1>
 
-								<!-- Nav -->
-										<nav id="nav">
-										
-										<a href="goRecommend">와인추천</a>
-										<a href="twocolumn1.html">와인백과사전</a>
-										<a href="goBoardMain">게시판</a>
-										<a href="twocolumn2.html">와이너리맵</a>
-									</nav>
+						<!-- Logo -->
+						<h1>
+							<a style="font-size:120%"; href="index.jsp" id="logo">Korea Wine</a>
+						</h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+
+							<a href="goRecommend">와인추천</a> <a href="twocolumn1.html">와인백과사전</a>
+							<a href="goBoardMain">게시판</a> <a href="twocolumn2.html">와이너리맵</a>
+						</nav>
 
 					</div>
 				</div>
@@ -60,54 +71,53 @@
 					<div class="col-12">
 
 						<!-- Main Content -->
-						<section>
+						<section class="sy">
 							<div>
 								<a class="feature-image"><img src="<%=vo.getInfo_img()%>"
-									style="max-width: 30%; height: auto; float:left;" alt="" /></a>
+									style="max-width: 45%; height: auto; float:left;" alt="" /></a>
 							</div>
 							<header>
-								<h2><%=vo.getInfo_name()%></h2>
+								<h2 style="font-size:300%"><%=vo.getInfo_name()%></h2>
 								
 							</header>
 								<h3 style="font-weight:bold">와인종류</h3>
-								<h3><%=vo.getInfo_type()%></h3>
+								<h3 style="font-weight:bold"><%=vo.getInfo_type()%></h3>
 								<br>
-								<h3 style="font-weight:bold">도수&nbsp;&nbsp; >&nbsp;&nbsp;
+								<h3 style="font-weight:normal">도수&nbsp;&nbsp; >&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_proof()%></span>
 								</h3>
-								<h3 style="font-weight:bold">타닌&nbsp;&nbsp; >&nbsp;&nbsp;
+								<h3 style="font-weight:normal">타닌&nbsp;&nbsp; >&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_tannin()%></span>
 								</h3>
-								<h3 style="font-weight:bold">당도 &nbsp;&nbsp;>&nbsp;&nbsp;
+								<h3 style="font-weight:normal">당도 &nbsp;&nbsp;>&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_sugar()%></span>
 								</h3>
-								<h3 style="font-weight:bold">산도&nbsp;&nbsp; >&nbsp;&nbsp;
+								<h3 style="font-weight:normal">산도&nbsp;&nbsp; >&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_acid()%></span>
 								</h3>
-								<h3 style="font-weight:bold">바디&nbsp;&nbsp; >&nbsp;&nbsp;
+								<h3 style="font-weight:normal">바디&nbsp;&nbsp; >&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_body()%></span>
 								</h3>
-								<h3 style="font-weight:bold">용량 &nbsp;&nbsp;>&nbsp;&nbsp;
+								<h3 style="font-weight:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;용량 &nbsp;&nbsp;>&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_size()%></span>
 								</h3>
-								<h3 style="font-weight:bold">어울리는 음식&nbsp;&nbsp;>&nbsp;&nbsp;
+								<h3 style="font-weight:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;어울리는 음식&nbsp;&nbsp;>&nbsp;&nbsp;
 								<span style="font-weight:normal"><%=vo.getInfo_food()%></span>
 								</h3>
 								
-								<p style="color:red;"><%=vo.getInfo_tag() %>
+								<p style="color:red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=vo.getInfo_tag() %>
 							
-								<br>
-								<br>
-								<br>
+							
+							
 									
 							<h3>와인설명</h3>
 							<p><%=vo.getInfo_con()%></p>
-	<br><br>
+	
 
 		
-			<header>
+			
 								<h2>판매처</h2>
-							</header>
+							
 							<div id="map" style="width: 100%; height: 350px;"></div>
 
 							<script type="text/javascript"

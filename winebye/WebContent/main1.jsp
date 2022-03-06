@@ -7,15 +7,9 @@
 		<meta charset="EUC-KR" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<script src="js/jquery-3.6.0.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-		<style>
-			body {
-				height : 100vh;
-       			background-image: url('images/back.png');
-      			 background-repeat : no-repeat;
-      			background-size : cover;
-				 opacity: 0.5;
-     		 }
+		<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+		
 	
 
 
@@ -43,7 +37,7 @@
 		
 	th{
 			color: white;
-		 background: black;
+		 background: #474f51;
 	}
 
 	a{
@@ -69,12 +63,16 @@
       
       #join{
         width: 30%;
+        height: 30%;
         padding: 10px 10px 10px 10px;
-        font-size: 20px;
+        font-size: 30px;
 		box-shadow:inset 0px 1px 3px 0px #91b8b3;
 		background:linear-gradient(to left, black,black );
-		background-color: black;
+		background: #474f51;
       	cursor:pointer;
+      	color:white;
+      	font-family: 'JeonHwaseon';
+      	
       }
 	
 	input::placeholder {
@@ -83,59 +81,51 @@
 
 	}
 	
-	#wine0{
-		font: nanumgodic;
-		font-size : 600%;
-		color : white;
-		text-align : center;
-		font-weight : bolder;
-		font-family: 'Nanum Pen Script', cursive;
+	
+	
+	
+	.sy{
+	border: 1px solid black;
 	}
-	
-	#back{
-	position : absolute;
-	top : 75%;
-	left : 35%;
-	width: 100%;
+	#f1{
+		font-family: 'JeonHwaseon';
+		font-size: 160%;
 	}
-	
-	
  
 			 
-		</style>
+</style>
 	</head>
-	<body>
+	<body id="f1" style="background-color:#dfd6cf;">
 
-					<br>
-					<p id="wine0">W I N E 학 개 론</p>
+					
+					
+					
+					<p style="text-align:center; font-size:650%; margin-top:10%; ">Korea Wine</p>
 					<br>
 			
 		<div class="go">
 
 		<form action="LoginService" method="post">
-			<table id="go2">
+			<table>
 			<tr>
-				<th colspan="2">로그인을 해주세요</th>
+				<th colspan="2" style="text-align:center; padding-top:33px;">로그인을 해주세요</th>
 			</tr>
 			<tr>
-				<td>ID</td>
-				<td><input name="id" type="text"  placeholder="ID를 입력하세요"></td>
+				<td style="color:black">ID</td>
+				<td><input name="id" type="text"  placeholder="ID를 입력하세요" ></td>
 			<tr>
 			<tr>
-				<td>PW</td>
+				<td style="color:black">PW</td>
 				<td><input name="pw" type="password"  placeholder="PW를 입력하세요"></td>
 			<tr>
-				<td colspan="2"><input type="submit" value="로그인" class="button fit">
+				<td colspan="2"><button id="join" type="submit">로그인</button>
 				<button id ="join" ><a href="Join.jsp" > 회원가입</a></button></td>
 			</tr>
 			</table>
 		</form>	
 		</div>
 		
-		<div id="back">
-			<img src="images/bg1.png">
-		
-		</div>
+	
 	
 	
 	
