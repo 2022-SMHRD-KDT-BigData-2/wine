@@ -34,6 +34,7 @@
 	color: white;
 	background-color: #474f51;
 	}
+	
 </style>
 </head>
 <body class="subpage" id="f1">
@@ -79,7 +80,7 @@
 		<section id="content">
 
 			<div id="board">
-				<table style= "width:100%; background-color:#fff" id="list" >
+				<table style= "width:100%; background-color:#fff; font-size:150%;" id="list" >
 					<tr style= "border: 1px solid #444444;">
 						<td class="bb" style=" width: 10%; text-align : center;">제목</td>
 						<td  style="background-color:white; border: 1px solid black;"><%=bvo.getTitle()%></td>
@@ -94,9 +95,12 @@
 					</tr>
 
 					<tr>
-						<td colspan="2"><a href="goBoardMain"><button>뒤로가기</button></a></td>
 					</tr>
 				</table>
+					<div style="text-align:center; font-size:150%;">
+						<a style="text-align:center;" href="goBoardMain"><button>뒤로가기</button></a>
+						<a style="text-align:center;" href="goBoardMain"><button>수정하기</button></a>
+						</div>
 			</div>
 		</section>
 	</div>

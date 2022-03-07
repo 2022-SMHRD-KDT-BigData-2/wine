@@ -102,7 +102,7 @@
 								<span style="font-weight:normal"><%=vo.getInfo_size()%></span>
 								</h3>
 								<h3 style="font-weight:normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;어울리는 음식&nbsp;&nbsp;>&nbsp;&nbsp;
-								<span style="font-weight:normal"><%=vo.getInfo_food()%></span>
+								<span style="font-weight:normal"><a href="https://wtable.co.kr/recipes/MKvu7wMsz1mxZagv1Utb26e7"><%=vo.getInfo_food()%></a></span>
 								</h3>
 								
 								<p style="color:red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=vo.getInfo_tag() %>
@@ -160,7 +160,12 @@
 							<p>연락처 : <%=svo.getSell_phone() %></p>
 							<p>홈페이지 : <a href = "<%=svo.getSell_url() %>"><%=svo.getSell_url() %></a> </p>
 		
-		
+					<br>
+                     <div id="review">
+                     <h3>댓글</h3>
+                     <input id="word" type="text">
+                     <button id="ok" type="submit">등록</button>
+                     </div>
 		
 						
 						

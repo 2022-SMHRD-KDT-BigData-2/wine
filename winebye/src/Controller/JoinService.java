@@ -52,7 +52,7 @@ public class JoinService extends HttpServlet {
 			//성공
 			out.println("<script>");
 			out.println("alert('회원가입에 성공 하였습니다.')");
-			out.print("location.href = 'index.jsp';");
+			out.print("location.href = 'main1.jsp';");
 			out.println("</script>");
 		}else {
 			//실패

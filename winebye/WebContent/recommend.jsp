@@ -78,7 +78,7 @@
 						<!-- Box #1 -->
  
 						
-							<section class="sy">
+							<section>
 								
 								<a href="goInfo?info_name=<%=vo.getInfo_name() %>"  class="feature-image"><img src="<%=vo.getInfo_img() %>"
 									style="max-width: 100%; height: auto; " alt="" /></a>

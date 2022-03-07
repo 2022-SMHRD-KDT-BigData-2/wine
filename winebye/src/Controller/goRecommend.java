@@ -19,6 +19,10 @@ public class goRecommend extends HttpServlet {
 	
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// DAO 메서드 사용 -> 모든 게시글 가져오기
+		//0. 인코딩
+				request.setCharacterEncoding("euc-kr");
+				
+		
 				WineDAO dao = new WineDAO();
 				List<WineVO> list = dao.selectRecommend();
 				

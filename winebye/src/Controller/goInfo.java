@@ -21,6 +21,10 @@ public class goInfo extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 	
+		//0. 인코딩
+				request.setCharacterEncoding("euc-kr");
+				
+		
 		// 1. 파라미터 수집
 		String name = request.getParameter("info_name");
 

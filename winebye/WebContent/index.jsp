@@ -22,7 +22,7 @@
 	font-family: 'JeonHwaseon';
 	font-size: 160%;
 }
- 
+
 </style>
 
 </head>
@@ -86,7 +86,7 @@
 					<div class="col-4 col-12-medium">
 
 						<!-- Box #1 -->
-						<section class="sy">
+						<section>
 							<header>
 								<h2>한국와인 여행지</h2>
 								<h3>WINE TRAVEL</h3>
@@ -104,7 +104,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 
 						<!-- Box #2 -->
-						<section class="sy">
+						<section>
 							<header>
 								<h2>와인 관련 영화</h2>
 								<h3>WINE MOVIE</h3>
@@ -123,7 +123,7 @@
 					<div class="col-4 col-6-medium col-12-small">
 
 						<!-- Box #3 -->
-						<section class="sy">
+						<section>
 							<header>
 								<h2>와인 관련 추천 도서</h2>
 								<h3>WINE BOOK</h3>

@@ -18,6 +18,7 @@
 	font-size: 160%;
 }
  
+ 
 </style>
 
 	<head>
@@ -69,8 +70,8 @@
 
 			<!-- Content -->
 				<section id="content">
-				<div id="board">
-				<table id ="list" style="padding:40px;text-align : center;">
+				<div id="board" style="text-align : center;">
+				<table id ="list" style="padding:40px; font-size:150%;">
 					<tr style = " background-color :  #474f51;" class="sy">
 						<td style = "color : white;">번호</td>
 						<td style = "color : white;">제목</td>

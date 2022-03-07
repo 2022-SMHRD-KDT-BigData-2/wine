@@ -77,10 +77,10 @@
 		<section id="content">
 			<div id="board">
 				<form action="writeService" method="post">
-					<table style= "width:100%; padding:40px;" id="list">
+					<table style= "width:100%; padding:40px; font-size:150%; text-align:center;" id="list">
 						<tr style= "background-color:white">
 							<td class="bb">와인</td>
-							<td style="border: 1px solid black;"><select name="choose" size="1">
+							<td style="border: 1px solid black; text-align:left;"><select name="choose" size="1">
 									<option value="컨츄리캠벨(스위트)">컨츄리캠벨(스위트)</option>
 									<option value="화이트 스위트750">화이트 스위트750</option>
 									<option value="그랑꼬또 레드스위트 M5610">그랑꼬또 레드스위트 M5610</option>
@@ -106,7 +106,7 @@
 							
 						
 							<td style="border: 1px solid black; background-color:white; " colspan="2">
-							 <input style= "width:100%; height:500px;" type="text" name="title">
+							 <input style= "width:100%; height:500px;" type="text" name="content">
 							 </td>
 						</tr>
 						<tr>
